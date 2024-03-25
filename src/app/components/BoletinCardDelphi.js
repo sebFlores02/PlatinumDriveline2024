@@ -11,7 +11,7 @@ function BoletinCardDelphi({ img, title }) {
         height={200}
         className="w-full rounded-t-xl"
       />
-      <h5 className="p-8">{title}</h5>
+      <h5 className="p-4 lg:p-8">{title}</h5>
     </main>
   );
 }

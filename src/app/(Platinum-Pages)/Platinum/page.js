@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CardProduct from "../../components/CardProduct";
 import Productos from "../../components/Productos";
+import CardDownload from "../../components/ContentConsumingCard";
 
 function page() {
   let quality = 60;
@@ -42,25 +43,32 @@ function page() {
         />
       </section>
 
-      <section className="bg-gray-100 my-14  text-center py-20">
-        <a href="https://catalogoplatinumdriveline.com/" target="_blank">
-          <div className="hero-text text-[32px]">
-            <p>
-              Visita Nuestro
-              <span className="text-naranja font-medium ml-2">
-                Catálogo en Línea
-              </span>
-            </p>
-            <Image
-              quality={60}
-              src="/Dispositivos.png"
-              alt="Kit"
-              width={460}
-              height={400}
-              className="mx-auto mt-4"
-            />
-          </div>
-        </a>
+      <section className="px-6 lg:px-10 xl:px-12 bg-gray-200 my-20 py-12">
+        <h1>Accede a Nuestro Contenido</h1>
+        <section className="mt-28 flex flex-col md:flex-row justify-center gap-18 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
+          <CardDownload
+            title={"Catálogo Electrónico"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            image={"CajaDelphi.png"}
+          />
+          <CardDownload
+            title={"Catálogo Electrónico"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            image={"CajaDelphi.png"}
+          />
+
+          <CardDownload
+            title={"Catálogo Electrónico"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            image={"CajaDelphi.png"}
+          />
+        </section>
       </section>
 
       <Productos />

@@ -3,11 +3,11 @@ import Link from "next/link";
 
 function page() {
   return (
-    <main className="px-20">
+    <main className="px-6 lg:px-10 xl:px-20">
       <h1 className="mt-20">Conoce Sobre Nosotros</h1>
 
-      <section className="flex gap-14 mt-10">
-        <section className="basis-2/5">
+      <section className="flex flex-col lg:flex-row gap-8 xl:gap-14 mt-10">
+        <section className="mx-auto basis-3/6 xl:basis-2/5">
           {/* <Image
             quality={60}
             src=  "/PlatinumHQ.png"
@@ -24,7 +24,7 @@ function page() {
           ></iframe> */}
         </section>
 
-        <section className="basis-3/5 text-justify">
+        <section className="basis-3/6 xl:basis-3/5 text-justify">
           <p>
             Platinum Driveline, Inc. fue fundado en 2012 por Bob Insalaco,
             anterior Gerente General de AMS Automotive y Art Lottes III, Ex
@@ -67,7 +67,7 @@ function page() {
       </section>
 
       <h1 className="mt-20 mb-10">Mas Sobre Nosotros</h1>
-      <section className="flex gap-20 text-justify leading-8">
+      <section className="flex flex-col lg:flex-row md:px-40 lg:px-0 gap-10 lg:gap-14 text-justify items-center leading-8">
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={60}
@@ -83,7 +83,7 @@ function page() {
             proveedores, clientes y medio ambiente.
           </p>
         </article>
-        <div className="border border-naranja h-[150px] mt-20"></div>
+        <div className="border border-naranja w-1/2 lg:w-[1px] h-[1px] lg:h-[150px] lg:mt-20"></div>
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={50}
@@ -99,7 +99,7 @@ function page() {
             para así crear una relación permanente.
           </p>
         </article>
-        <div className="border border-naranja h-[150px] mt-20"></div>
+        <div className="border border-naranja w-1/2 lg:w-[1px] h-[1px] lg:h-[150px] lg:mt-20"></div>
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={60}

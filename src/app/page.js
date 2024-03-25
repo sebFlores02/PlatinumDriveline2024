@@ -3,15 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-[url('/Background.png')] bg-cover w-full h-[100vh] text-white flex flex-col justify-between pb-14">
-      <nav className="flex justify-between px-20">
+    <main className="bg-[url('/Background.png')] sm:bg-[url('/Background.png')] bg-cover w-full min-h-[100vh] text-white flex flex-col justify-between pb-14">
+      <nav className="flex justify-between px-4 md:px-12 lg:px-20">
         <Image
           src="/LOGOPlatinum.png"
           width={200}
           height={200}
           alt="Logo Mel Abogados"
+          className="w-[40%] max-w-[200px] sm:w-full"
         />
-        <ul className="flex justify-between items-center font-medium text-white text-[16px] gap-10  underline-offset-4">
+        <ul className="flex justify-between items-center font-medium text-white text-sm sm:text-[16px] gap-4 sm:gap-10 underline-offset-4">
           <Link className="hover:underline" href="/QuienesSomos">
             Sobre Nosotros
           </Link>
@@ -20,9 +21,9 @@ export default function Home() {
           </Link>
         </ul>
       </nav>
-      <section className="flex">
+      <section className="flex flex-col sm:flex-row">
         <article className="basis-1/2 flex flex-col items-center">
-          <h3 className="text-[40px]">Clutches</h3>
+          <h3 className="text-[40px] mt-8 sm:mt-0">Clutches</h3>
           <Image
             quality={50}
             src="/CajaPlatinum.png"
@@ -38,7 +39,7 @@ export default function Home() {
           </Link>
         </article>
         <article className="basis-1/2 flex flex-col items-center">
-          <h3 className="text-[40px]">Suspensión</h3>
+          <h3 className="text-[40px] mt-20 sm:mt-0">Suspensión</h3>
           <Image
             quality={50}
             src="/CajaDelphi.png"
@@ -54,15 +55,15 @@ export default function Home() {
           </Link>
         </article>
       </section>
-      <section className="flex justify-center gap-8">
+      <section className="flex justify-center items-center gap-8 mt-20 sm:mt-0">
         <Link
           href="https://www.facebook.com/PlatinumDrivelineMx/"
           target="_blank"
         >
           <Image
             src="/facebook.png"
-            width={35}
-            height={35}
+            width={25}
+            height={25}
             alt="Logo Mel Abogados"
             className="cursor-pointer"
           />
@@ -71,8 +72,8 @@ export default function Home() {
         <Link href="https://wa.me/4423455370" target="_blank">
           <Image
             src="/whatsapp.png"
-            width={35}
-            height={35}
+            width={25}
+            height={25}
             alt="Logo Mel Abogados"
             className="cursor-pointer"
           />
