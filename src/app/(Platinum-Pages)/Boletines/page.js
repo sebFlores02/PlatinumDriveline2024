@@ -6,9 +6,7 @@ function page() {
 
   return (
     <main className="px-5 xl:px-40">
-      <h1 className="pt-[140px] pb-[20px] px-[10px] font-medium text-[50px] text-center">
-        Nuestros Boletines
-      </h1>
+      <h1 className="py-6 lg:py-12">Nuestros Boletines</h1>
 
       <section className="flex flex-wrap justify-evenly mb-5 px-4 gap-2 mx-auto w-full">
         <Boletin

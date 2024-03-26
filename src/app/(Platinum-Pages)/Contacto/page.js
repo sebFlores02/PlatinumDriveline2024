@@ -3,9 +3,9 @@
 export default function Contacto() {
   return (
     <main className="flex flex-col items-center">
-      <h1>Llene el formulario de Contacto</h1>
+      <h1 className="py-6 lg:py-12">Llene el formulario de Contacto</h1>
 
-      <form className="mt-10 px-5 w-full lg:w-4/6">
+      <form className="px-5 w-full lg:w-4/6">
         <fieldset className="flex flex-col ">
           <label className="font-semibold uppercase">Nombre</label>
           <input

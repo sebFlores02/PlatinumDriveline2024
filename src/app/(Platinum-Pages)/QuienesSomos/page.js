@@ -4,9 +4,9 @@ import Link from "next/link";
 function page() {
   return (
     <main className="px-6 lg:px-10 xl:px-20">
-      <h1 className="mt-20">Conoce Sobre Nosotros</h1>
+      <h1 className="py-6 lg:py-12 xl:py-16">Conoce Sobre Nosotros</h1>
 
-      <section className="flex flex-col lg:flex-row gap-8 xl:gap-14 mt-10">
+      <section className="flex flex-col lg:flex-row gap-8 xl:gap-14">
         <section className="mx-auto basis-3/6 xl:basis-2/5">
           {/* <Image
             quality={60}

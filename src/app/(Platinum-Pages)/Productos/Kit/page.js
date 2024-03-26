@@ -3,9 +3,9 @@ import Image from "next/image";
 function page() {
   return (
     <main className="px-8 lg:px-10 xl:px-32">
-      <h1>Kit</h1>
+      <h1 className="py-6 lg:py-12">Kit</h1>
 
-      <section className="flex flex-col md:flex-row justify-between mt-5 mb-16 px-4 md:gap-16 md:items-center">
+      <section className="flex flex-col md:flex-row justify-between mb-16 px-4 md:gap-16 md:items-center">
         <section className="basis-2/5">
           <Image
             quality={100}

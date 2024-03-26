@@ -3,7 +3,7 @@ import Image from "next/image";
 function page() {
   return (
     <main className="flex flex-col items-center">
-      <h1>Videos</h1>
+      <h1 className="py-6 lg:py-12">Videos</h1>
 
       <section className="flex flex-wrap justify-evenly mb-5 px-4 gap-2 mx-auto w-full">
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
@@ -74,7 +74,7 @@ function page() {
         </article>
       </section>
 
-      <h1 className="text-[50px] mt-[80px] mb-[50px]">Imágenes</h1>
+      <h1 className="py-6 lg:py-12">Imágenes</h1>
 
       <section className="flex flex-wrap justify-evenly mb-5 px-4 gap-2 mx-auto w-full">
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">

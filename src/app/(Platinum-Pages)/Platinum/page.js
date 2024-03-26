@@ -8,7 +8,7 @@ function page() {
 
   return (
     <main>
-      <h1 className="my-12">Nuevas Integraciones</h1>
+      <h1 className="py-6 lg:py-12">Nuevas Integraciones</h1>
 
       <section className="flex justify-center flex-wrap gap-5 px-8 md:px-5 xl:px-24 2xl:px-60">
         <CardProduct
@@ -75,7 +75,7 @@ function page() {
 
       <section className="px-6 lg:px-10 xl:px-40 bg-gray-400 my-20 py-12">
         <h1>Accede a Nuestro Contenido</h1>
-        <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
+        <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
             title={"Catálogo Electrónico"}
             content={

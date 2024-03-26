@@ -6,8 +6,8 @@ function page() {
 
   return (
     <main>
-      <h1>Nuestra Calidad</h1>
-      <section className="px-6 md:px-10 lg:px-14 xl:px-28 gap-10 lg:gap-20 flex flex-col lg:flex-row justify-between w-full mb-28 mt-14">
+      <h1 className="py-6 lg:py-12">Nuestra Calidad</h1>
+      <section className="px-6 md:px-10 lg:px-14 xl:px-28 gap-10 lg:gap-20 flex flex-col lg:flex-row justify-between w-full mb-28 mt-6">
         <article className="basis-[50%] text-justify flex flex-col items-center leading-9">
           <Image
             quality={`${quality}`}
