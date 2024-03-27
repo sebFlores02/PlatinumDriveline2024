@@ -73,38 +73,42 @@ function page() {
         />
       </section>
 
-      <section className="px-6 lg:px-10 xl:px-40 bg-gray-400 my-20 py-12">
-        <h1>Accede a Nuestro Contenido</h1>
+      <section className="px-6 lg:px-10 xl:px-40 bg-gris_oscuro my-20 py-12">
+        <h1 className="text-white">Accede a Nuestro Contenido</h1>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
             title={"Catálogo Electrónico"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"web"}
+            href={"https://catalogoplatinumdriveline.com"}
           />
           <CardDownload
-            title={"Catálogo Electrónico"}
+            title={"Catálogo Ligero"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"download"}
+            href={"/download/Cedula-1.pdf"}
           />
         </section>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
-            title={"Catálogo Electrónico"}
+            title={"Catálogo Diesel"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"download"}
+            href={"/download/Cedula-1.pdf"}
           />
           <CardDownload
-            title={"Catálogo Electrónico"}
+            title={"Catálogo Volantes"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"download"}
+            href={"/download/Cedula-1.pdf"}
           />
         </section>
       </section>

@@ -54,14 +54,18 @@ function page() {
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"web"}
+            href={
+              "http://www.delphicat.com/WebForms/frmDelphiHome.aspx?territory=6&language=8&yearFormat=EU&MMLRegion=1#1690820043905"
+            }
           />
           <CardDownload
-            title={"Catálogo Electrónico"}
+            title={"Catálogo en PDF"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            image={"CajaDelphi.png"}
+            type={"download"}
+            href={"/download/Cedula-1.pdf"}
           />
         </section>
         <section className="bg-[#c4c4c4] mt-10 mb-40 p-4 md:p-10 text-center rounded-2xl">
