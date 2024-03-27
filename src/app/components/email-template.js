@@ -1,20 +1,8 @@
-// import { EmailTemplate } from "../../../components/EmailTemplate";
-import { EmailTemplate } from "../../components/email-template";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-export async function POST() {
-  try {
-    const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["seb.flores2002@gmail.com"],
-      subject: "Hello world",
-      react: EmailTemplate({ firstName: "John" }),
-    });
-
-    return Response.json(data);
-  } catch (error) {
-    return Response.json({ error });
-  }
-}
+export const EmailTemplate = ({ firstName, email, telefono, mensaje }) => (
+  <div>
+    <h1>Te contacto, {firstName}!</h1>
+    <p>Su correo es {email}</p>
+    <p>Su teléfono es {telefono}</p>
+    <p>Su mensaje es {mensaje}</p>
+  </div>
+);
