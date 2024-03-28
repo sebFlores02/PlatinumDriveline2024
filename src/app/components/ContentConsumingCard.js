@@ -9,15 +9,15 @@ function ContentConsumingCard({ title, content, type, href }) {
   }
 
   return (
-    <main className="bg-[#d1c9c9] text-center w-full rounded-2xl px-6 2xl:px-32 pb-12">
+    <main className="bg-[#c5c2c2] text-center w-full rounded-2xl px-6 2xl:px-32 pb-12">
       <a href={href} {...linkProps}>
-        <section className="bg-[#e7e7e7] rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]">
+        <section className="bg-[#ffffff] rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]">
           <Image
             quality={60}
             src={type === "web" ? "/icons/domain.png" : "/icons/download.png"}
             alt="accion"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
           />
         </section>
         <h3 className="font-medium text-2xl py-6">{title}</h3>

@@ -23,7 +23,7 @@ export default function Home() {
       </nav>
       <section className="flex flex-col sm:flex-row">
         <article className="basis-1/2 flex flex-col items-center">
-          <h3 className="text-[40px] mt-8 sm:mt-0">Clutches</h3>
+          <h3 className="text-[40px] mt-8 sm:mt-0">Embrague</h3>
           <Image
             quality={50}
             src="/CajaPlatinum.png"

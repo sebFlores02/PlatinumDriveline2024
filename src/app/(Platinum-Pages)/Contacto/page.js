@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Contacto() {
   const [state, setState] = useState();
-  const [alert, setAlert] = useState(true);
+  const [alert, setAlert] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -30,7 +31,15 @@ export default function Contacto() {
       telefono: "",
       mensaje: "",
     });
+
+    setAlert(true);
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAlert(false);
+    }, 2000);
+  }, [alert]);
 
   function handleInputChange(e) {
     setFormData({
@@ -39,15 +48,22 @@ export default function Contacto() {
     });
   }
 
-  const alertLogic = () => {};
-
   return (
     <main className="flex flex-col items-center">
       <h1 className="py-6 lg:py-12">Llene el formulario de Contacto</h1>
-      <form className="px-5 w-full lg:w-4/6" onSubmit={handleOnSubmit}>
+      <form className="px-5 w-full lg:w-4/6 pb-12" onSubmit={handleOnSubmit}>
         {alert && (
-          <section className="bg-green-300 py-4 rounded-2xl px-10">
-            Gracias por llenar el formulario
+          <section className="bg-[#E7FFEC] border border-[#ACD2BC] text-[#06842E] py-4 rounded-2xl px-10 mb-8 flex flex-col sm:flex-row gap-3 md:gap-6 items-center text-center">
+            <Image
+              src="/icons/correct.png"
+              width={24}
+              height={24}
+              alt="Icon regresar"
+            />
+            <p>
+              <span className="font-bold">Exito!</span> Tu mensaje ha sido
+              enviado exitosamente.
+            </p>
           </section>
         )}
         <fieldset className="flex flex-col ">

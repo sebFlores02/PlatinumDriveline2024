@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailTemplate } from "../../components/email-template";
 
-const resend = new Resend("re_653uQxi3_82FoUqEi91R5QCKs5z9g7vhe");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   const { firstName, email, telefono, mensaje } = await request.json();

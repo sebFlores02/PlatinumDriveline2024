@@ -41,28 +41,19 @@ function Header() {
       <section
         className={`${
           isVisible ? "bg-white" : "bg-gris_oscuro"
-        } flex justify-between items-center md:pl-3 pr-6 h-[10vh]`}
+        } flex justify-between items-center md:pl-3 pr-6 h-[10vh] py-12`}
       >
-        <section className="flex gap-4 items-center">
+        <section className="flex gap-4 items-center basis-[15%]">
           <Link href="/">
             <Image
               quality={60}
               src="/LOGOPlatinum.png"
               alt="Kit"
               width={200}
-              height={200}
+              height={130}
+              className="min-h-[130px] min-w-[200px]"
             />
           </Link>
-        </section>
-        <section className=" hidden basis-[15%]">
-          <Image
-            quality={60}
-            src="/facebookNaranja.png"
-            alt="Kit"
-            width={25}
-            height={25}
-            className="float-end"
-          />
         </section>
         <Image
           onClick={toggleMenu}
@@ -74,7 +65,7 @@ function Header() {
           className="float-end nav:hidden"
         />
 
-        <ul className="hidden nav:flex gap-10 font-semibold text-white">
+        <ul className="hidden nav:flex gap-10 font-semibold text-white basis-[85%] lg:basis-[70%] justify-center">
           <li>
             <a href="/Platinum">Inicio</a>
           </li>
@@ -95,16 +86,18 @@ function Header() {
           </li>
         </ul>
         <a
-          className="hidden lg:flex"
+          className="hidden lg:flex basis-[15%]"
           href="https://www.facebook.com/PlatinumDrivelineMx/"
           target="_blank"
         >
-          <Image
-            src="/icons/facebookNaranja.png"
-            width={24}
-            height={24}
-            alt="Logo Twitter"
-          />
+          <section className="ml-auto">
+            <Image
+              src="/icons/facebookNaranja.png"
+              width={24}
+              height={24}
+              alt="Logo Twitter"
+            />
+          </section>
         </a>
       </section>
       {isVisible && (

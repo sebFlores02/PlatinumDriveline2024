@@ -67,7 +67,7 @@ function page() {
       </section>
 
       <h1 className="mt-20 mb-10">Mas Sobre Nosotros</h1>
-      <section className="flex flex-col lg:flex-row md:px-40 lg:px-0 gap-10 lg:gap-14 text-justify items-center leading-8">
+      <section className="flex flex-col lg:flex-row md:px-40 lg:px-0 gap-10 lg:gap-14 text-justify items-center leading-8 mb-28">
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={60}
