@@ -11,7 +11,7 @@ function ContentConsumingCard({ title, content, type, href }) {
   return (
     <main className="bg-[#c5c2c2] text-center w-full rounded-2xl px-6 2xl:px-32 pb-12">
       <a href={href} {...linkProps}>
-        <section className="bg-[#ffffff] rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]">
+        <section className="bg-[#747474] rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]">
           <Image
             quality={60}
             src={type === "web" ? "/icons/domain.png" : "/icons/download.png"}

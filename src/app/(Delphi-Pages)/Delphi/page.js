@@ -6,8 +6,8 @@ function page() {
   return (
     <main>
       <section className="bg-azul_delphi p-6 xl:px-40 mb-20 pb-16">
-        <a href="/">
-          <button className="flex border rounded-full px-6 py-2 gap-3 mb-7">
+        <a href="/" className="pt-20 lg:pt-40">
+          <button className="flex border rounded-full px-6 py-2 gap-3">
             <Image
               src="/icons/left-arrow.png"
               width={24}
@@ -68,7 +68,7 @@ function page() {
             href={"/download/Cedula-1.pdf"}
           />
         </section>
-        <section className="bg-[#c4c4c4] mt-10 mb-40 p-4 md:p-10 text-center rounded-2xl">
+        <section className="bg-[#c4c4c4] mt-10 mb-28 p-4 md:p-10 text-center rounded-2xl">
           <h3 className="font-medium text-2xl py-3 lg:py-6">
             Nuestros Boletines
           </h3>
@@ -86,6 +86,75 @@ function page() {
               title={"Boletín técnico aplicación Nissan Versa"}
             />
           </section>
+        </section>
+      </section>
+      <section className="bg-azul_delphi px-5 lg:px-16 xl:px-28">
+        <h2 className="text-center py-16 text-white text-[28px] font-medium">
+          Nuestros Productos
+        </h2>
+        <section className="flex flex-col sm:flex-row justify-center gap-5 xl:gap-20">
+          <article className="bg-white rounded-2xl">
+            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
+              <Image
+                quality={60}
+                src="/images/SensoresDemo.png"
+                alt="Kit"
+                width={500}
+                height={240}
+                className="rounded-2xl p-4"
+              />
+            </section>
+            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
+              Sensores
+            </p>
+          </article>
+          <article className="bg-white rounded-2xl">
+            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
+              <Image
+                quality={60}
+                src="/images/SensoresDemo.png"
+                alt="Kit"
+                width={500}
+                height={240}
+                className="rounded-2xl p-4"
+              />
+            </section>
+            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
+              Sensores
+            </p>
+          </article>
+        </section>
+        <section className="flex flex-col sm:flex-row justify-center gap-5 xl:gap-20 py-10">
+          <article className="bg-white rounded-2xl">
+            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
+              <Image
+                quality={60}
+                src="/images/SensoresDemo.png"
+                alt="Kit"
+                width={500}
+                height={240}
+                className="rounded-2xl p-4"
+              />
+            </section>
+            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
+              Sensores
+            </p>
+          </article>
+          <article className="bg-white rounded-2xl">
+            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
+              <Image
+                quality={60}
+                src="/images/SensoresDemo.png"
+                alt="Kit"
+                width={500}
+                height={240}
+                className="rounded-2xl p-4"
+              />
+            </section>
+            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
+              Sensores
+            </p>
+          </article>
         </section>
       </section>
     </main>
