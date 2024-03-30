@@ -80,8 +80,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/EquipoStand.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -89,8 +89,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/productos_display.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -99,8 +99,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/mecanicos.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -109,8 +109,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/estandExpo.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -119,8 +119,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/equipoPlatinum.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -129,8 +129,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/testCalidad.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -139,8 +139,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/EstandPlatinum2.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -149,8 +149,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/EquipoPlatinum2.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />
@@ -159,8 +159,8 @@ function page() {
         <article className="w-full sm:w-[48%] lg:w-[31%] mt-3">
           <Image
             src="/ProductoEstand.jpeg"
-            width={200}
-            height={200}
+            width={700}
+            height={500}
             alt="Logo Mel Abogados"
             className="w-full h-[500px] object-cover"
           />

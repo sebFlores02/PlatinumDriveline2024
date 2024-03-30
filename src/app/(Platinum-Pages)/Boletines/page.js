@@ -13,19 +13,16 @@ function page() {
           img={"BoletinVersa.jpeg"}
           title={"Boletín 1"}
           description={"Boletín técnico aplicación Nissan Versa"}
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"Instalacion.jpeg"}
           title={"Boletín 2"}
           description={"Guia de instalación"}
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"Garantia.jpeg"}
           title={"Boletín 3"}
           description={"Garantía"}
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"FallaSoluciones1.jpeg"}
@@ -33,7 +30,6 @@ function page() {
           description={
             "Parte 1 Procedimiento para revision de fallas y soluciones del embrague"
           }
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"Fallas2.jpeg"}
@@ -41,7 +37,6 @@ function page() {
           description={
             "Parte 2 Procedimiento para revision de fallas y soluciones del embrague"
           }
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"BoletinA1A2A3.jpeg"}
@@ -49,7 +44,6 @@ function page() {
           description={
             "Boletin tecnico aplicaciones vehiculos VW linea A1, A2, A3"
           }
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"BoletinNissan.jpeg"}
@@ -57,13 +51,11 @@ function page() {
           description={
             " Boletín de aplicaciones para vehiculos Nissan 2.5 LTS gasolina y diesel"
           }
-          href={"/download/Cedula-1.pdf"}
         />
         <Boletin
           img={"Fallas2.jpeg"}
           title={"Boletín 8"}
           description={"Especificaciones para rectificado de volantes"}
-          href={"/download/Cedula-1.pdf"}
         />
       </section>
     </main>

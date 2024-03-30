@@ -5,8 +5,8 @@ import BoletinCard from "../../components/BoletinCardDelphi";
 function page() {
   return (
     <main>
-      <section className="bg-azul_delphi p-6 xl:px-40 mb-20 pb-16">
-        <a href="/" className="pt-20 lg:pt-40">
+      <section className="bg-azul_delphi p-6 xl:px-40 mb-20 pb-16 pt-10">
+        <a href="/">
           <button className="flex border rounded-full px-6 py-2 gap-3">
             <Image
               src="/icons/left-arrow.png"
@@ -23,6 +23,7 @@ function page() {
           alt="Kit"
           width={200}
           height={200}
+          className="mt-8"
         />
         <article className="flex flex-col md:flex-row bg-white rounded-2xl rounded-t-2xl mt-7">
           <section className="bg-[#bcbcbc] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">

@@ -71,7 +71,7 @@ function page() {
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={60}
-            src="/philosophy.png"
+            src="/icons/philosophy.png"
             alt="philosophy"
             width={90}
             height={90}
@@ -87,7 +87,7 @@ function page() {
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={50}
-            src="/target.png"
+            src="/icons/target.png"
             alt="target"
             width={90}
             height={90}
@@ -103,7 +103,7 @@ function page() {
         <article className="flex flex-col items-center basis-1/3">
           <Image
             quality={60}
-            src="/opportunity.png"
+            src="/icons/opportunity.png"
             alt="opportunity"
             width={90}
             height={90}
