@@ -15,7 +15,7 @@ const NavItem = ({ href, text, icon }) => (
         alt={"burger menu"}
         width={24}
         height={24}
-        className="float-end lg:hidden"
+        className="float-end nav2:hidden"
       />
     </Link>
   </li>
@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <main>
-      <section className="hidden nav:flex bg-naranja px-[50px] 2xl:px-[100px] py-2 justify-between items-center">
+      <section className="hidden nav2:flex bg-naranja px-[50px] 2xl:px-[100px] py-2 justify-between items-center">
         <section className="flex gap-4">
           <Link
             href="https://www.facebook.com/PlatinumDrivelineMx/"
@@ -104,7 +104,7 @@ function Header() {
           </section>
         </section>
       </section>
-      <nav className={`${isVisible ? "fixed w-full flex flex-col" : ""}`}>
+      <nav className={`${isVisible ? "fixed w-full flex flex-col z-10" : ""}`}>
         <section
           className={`${
             isVisible ? "bg-white" : "bg-gris_oscuro"
@@ -129,10 +129,10 @@ function Header() {
             alt={"burger menu"}
             width={25}
             height={25}
-            className="float-end nav:hidden"
+            className="float-end nav2:hidden"
           />
 
-          <ul className="hidden nav:flex gap-10 text-white justify-center">
+          <ul className="hidden nav2:flex gap-10 text-white justify-center">
             <li>
               <a href="/">Inicio</a>
             </li>
@@ -157,7 +157,7 @@ function Header() {
           </ul>
         </section>
         {isVisible && (
-          <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium lg:hidden px-6">
+          <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium nav2:hidden px-6">
             <ul className="flex flex-col justify-center gap-7 bg-[#F4F4F4] rounded-2xl py-7 px-7">
               {menuItems.map((item, index, icon) => (
                 <article

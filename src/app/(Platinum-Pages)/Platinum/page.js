@@ -2,12 +2,14 @@ import Image from "next/image";
 import CardProduct from "../../components/CardProduct";
 import Productos from "../../components/Productos";
 import CardDownload from "../../components/ContentConsumingCard";
+import Carousel from "../../components/Carousel/Carousel";
 
 function page() {
   let quality = 60;
 
   return (
     <main>
+      <Carousel />
       <h1 className="py-6 lg:py-12">Nuevas Integraciones</h1>
 
       <section className="flex justify-center flex-wrap gap-5 px-8 md:px-5 xl:px-24 2xl:px-60">
