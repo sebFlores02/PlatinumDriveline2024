@@ -13,21 +13,24 @@ function Productos() {
           <p className="text-[#5397DC] font-regular text-lg mt-4 hover:underline">
             Mas información
           </p>
-          <section className="flex flex-col md:flex-row gap-12 mb-20 mt-8 px-8">
+          <section className="flex flex-col md:flex-row items-center justify-center gap-12 mb-20 mt-8 px-8">
             <Image
               quality={`${quality}`}
               src="/images/FD05-1.png"
               alt="Kit"
-              width={350}
-              height={350}
+              width={450}
+              height={450}
             />
-            <Image
-              quality={`${quality}`}
-              src="/images/SFC511PL.png"
-              alt="Boletin #1"
-              width={350}
-              height={350}
-            />
+            <article className="flex justify-center">
+              <Image
+                quality={`${quality}`}
+                src="/images/SFC511PL.png"
+                alt="Boletin #1"
+                width={350}
+                height={350}
+                className="w-[70%]"
+              />
+            </article>
           </section>
         </a>
       </section>

@@ -23,7 +23,8 @@ const NavItem = ({ href, text, icon }) => (
 
 function Header() {
   const menuItems = [
-    { href: "Platinum", text: "Inicio", icon: "icons/next.png" },
+    { href: "/", text: "Inicio", icon: "icons/next.png" },
+    { href: "Platinum", text: "Embrague", icon: "icons/next.png" },
     { href: "QuienesSomos", text: "¿Quiénes Somos?", icon: "icons/next.png" },
     { href: "Productos", text: "Producto", icon: "icons/next.png" },
     { href: "Boletines", text: "Boletines", icon: "icons/next.png" },
@@ -136,7 +137,7 @@ function Header() {
               <a href="/">Inicio</a>
             </li>
             <li>
-              <a href="/Platinum">Platinum</a>
+              <a href="/Platinum">Embrague</a>
             </li>
             <li>
               <a href="/QuienesSomos">¿Quiénes Somos?</a>
@@ -156,7 +157,7 @@ function Header() {
           </ul>
         </section>
         {isVisible && (
-          <section className="bg-white h-[90vh] flex flex-col justify-between pt-6 text-black font-medium lg:hidden px-6">
+          <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium lg:hidden px-6">
             <ul className="flex flex-col justify-center gap-7 bg-[#F4F4F4] rounded-2xl py-7 px-7">
               {menuItems.map((item, index, icon) => (
                 <article
