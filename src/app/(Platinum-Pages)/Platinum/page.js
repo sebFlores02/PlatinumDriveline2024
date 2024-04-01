@@ -13,62 +13,62 @@ function page() {
       <section className="flex justify-center flex-wrap gap-5 px-8 md:px-5 xl:px-24 2xl:px-60">
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"TY06-250HLX-01"}
+          title={"TY07-275HCE-01"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "Toyota Hiace",
+            "V6, 3.5 LTS. 24 V",
+            "GASOLINA 227 HP 2019-2023",
+            "Con CSC",
           ]}
         />
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"FD105-03"}
+          title={"MB00-240SPR-03"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "MERCEDES BENZ Sprinter",
+            "L4. 2.1, 16 VALV.",
+            "Con CSC",
+            "240 MM | 26D",
           ]}
         />
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"FD105-03"}
+          title={"HON03-200FIT-01"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "FIT L4 1.5 LTS. DOHC 130HP. 15-20",
+            "CITY 11-19 SOHC 1.5",
+            "FIT 09-19 SOHC 1.5",
+            "FIT 4 CIL 1.5L 5 VEL 2009",
           ]}
         />
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"TY06-250HLX-01"}
+          title={"HIN04-300414-01"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "414 - 614",
+            "L4 4.0 Litros",
+            "TURBO DIESEL",
+            "5 VEL 2009 A 2019",
           ]}
         />
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"FD105-03"}
+          title={"MB04-430OM460-01"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "MULTEGO OC 500",
+            "OM457 L6 12L 428HP",
+            "L6 12.8L 420HP",
+            "MBGO21OM",
           ]}
         />
         <CardProduct
           image={"FD105-03.jpeg"}
-          title={"FD105-03"}
+          title={"MB05-BUS457-01"}
           texto={[
-            "Ford FIGO",
-            "L3. 1.5 L. TIVCT 121 HP. 19-22",
-            "3 Cilindros",
-            "Sin CSC",
+            "AUTOBUS MB 447-457",
+            "OM447",
+            "OM457 Transmisión ZF S6105",
+            "430 MM, 10D",
           ]}
         />
       </section>
@@ -89,8 +89,10 @@ function page() {
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
-            type={"download"}
-            href={"/download/Cedula-1.pdf"}
+            type={"web"}
+            href={
+              "https://drive.google.com/file/d/1VALiPiPlFG4SzS6s9B8Z4U9d5ZjGhgHf/view?usp=sharing"
+            }
           />
         </section>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
@@ -100,7 +102,7 @@ function page() {
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
             type={"download"}
-            href={"/download/Cedula-1.pdf"}
+            href={""}
           />
           <CardDownload
             title={"Catálogo Volantes"}
@@ -108,7 +110,8 @@ function page() {
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
             }
             type={"download"}
-            href={"/download/Cedula-1.pdf"}
+            href={""}
+            volantes={true}
           />
         </section>
       </section>

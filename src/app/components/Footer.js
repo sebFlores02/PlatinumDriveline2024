@@ -30,7 +30,7 @@ function Footer() {
       </section>
 
       <h6 className="basis-1/3 text-gris_ligero text-center md:text-end text-sm mt-8 nav:mt-0 md:px-10 xl:px-0">
-        @ 2021 Platinum Driveline All rights reserved
+        @ 2024 Platinum Driveline All rights reserved
       </h6>
     </main>
   );

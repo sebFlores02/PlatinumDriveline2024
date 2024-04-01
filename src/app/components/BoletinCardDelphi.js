@@ -1,18 +1,26 @@
 import Image from "next/image";
 
-function BoletinCardDelphi({ img, title }) {
+function BoletinCardDelphi({ img, title, href }) {
   return (
-    <main className="bg-[#e7e7e7] rounded-xl">
-      <Image
-        quality={60}
-        src={`/${img}`}
-        alt="Kit"
-        width={200}
-        height={200}
-        className="w-full rounded-t-xl"
-      />
-      <h5 className="p-4 lg:p-8">{title}</h5>
-    </main>
+    <a
+      href={`${href}`}
+      download
+      className="bg-white rounded-xl flex flex-col items-center"
+    >
+      <section className="flex-shrink-0">
+        <Image
+          quality={60}
+          src={`/${img}`}
+          alt="Kit"
+          width={550}
+          height={400}
+          className="w-full h-full rounded-t-xl object-contain border-b-2"
+        />
+      </section>
+      <h5 className="p-4 lg:p-6 text-center flex-grow flex flex-col justify-center">
+        {title}
+      </h5>
+    </a>
   );
 }
 

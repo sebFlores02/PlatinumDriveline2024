@@ -26,11 +26,11 @@ export default function Home() {
           <h3 className="text-[40px] mt-8 sm:mt-0">Embrague</h3>
           <Image
             quality={50}
-            src="/CajaPlatinum.png"
-            width={550}
-            height={550}
-            alt="Logo Mel Abogados"
-            className="py-[40px]"
+            src="/images/TestPlatinumPortada.png"
+            width={450}
+            height={450}
+            alt="imagen platinum"
+            className="py-[55px]"
           />
           <Link href="/Platinum">
             <button className="border border-white rounded-lg px-9 py-3 hover:border-naranja hover:text-naranja">
@@ -38,15 +38,15 @@ export default function Home() {
             </button>
           </Link>
         </article>
-        <article className="basis-1/2 flex flex-col items-center">
+        <article className="basis-1/2 flex flex-col items-center justify-between">
           <h3 className="text-[40px] mt-20 sm:mt-0">Suspensión</h3>
           <Image
             quality={50}
             src="/CajaDelphi.png"
             width={550}
             height={550}
-            alt="Logo Mel Abogados"
-            className="py-[40px]"
+            alt="imagen delphi"
+            className="py-[55px]"
           />
           <Link href="/Delphi">
             <button className="border border-white rounded-lg px-9 py-3 hover:border-naranja hover:text-naranja">
@@ -68,10 +68,18 @@ export default function Home() {
             className="cursor-pointer"
           />
         </Link>
-        {/* <img className='social_media_icon' src={insta} /> */}
         <Link href="https://wa.me/4423455370" target="_blank">
           <Image
             src="/whatsapp.png"
+            width={25}
+            height={25}
+            alt="Logo Mel Abogados"
+            className="cursor-pointer"
+          />
+        </Link>
+        <Link href="mailto:seb.flores2002@gmail.com">
+          <Image
+            src="/icons/emailWhiteNonCircular.png"
             width={25}
             height={25}
             alt="Logo Mel Abogados"

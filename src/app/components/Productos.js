@@ -7,26 +7,26 @@ function Productos() {
     <main>
       <h1>Nuestros Productos</h1>
 
-      <section className="bg-gray-100 flex flex-col items-center text-center mt-6">
+      <section className="bg-[#F4F4F4] flex flex-col items-center text-center mt-6">
         <a href="/Productos/Kit">
           <h2 className="text-[35px] font-medium mt-9">Kits + CSC</h2>
           <p className="text-[#5397DC] font-regular text-lg mt-4 hover:underline">
             Mas información
           </p>
-          <section className="flex flex-col md:flex-row gap-12 mb-20 mt-12">
+          <section className="flex flex-col md:flex-row gap-12 mb-20 mt-8 px-8">
             <Image
               quality={`${quality}`}
-              src="/VW03-2.png"
-              alt="Boletin #1"
-              width={300}
-              height={300}
+              src="/images/FD05-1.png"
+              alt="Kit"
+              width={350}
+              height={350}
             />
             <Image
               quality={`${quality}`}
-              src="/VW03-2.png"
+              src="/images/SFC511PL.png"
               alt="Boletin #1"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
             />
           </section>
         </a>
@@ -35,7 +35,7 @@ function Productos() {
       <h1 className="my-14 p-0">Nuestros Componentes</h1>
 
       <section className="flex flex-col md:flex-row justify-between gap-6">
-        <article className="bg-gray-100 basis-1/2 flex flex-col items-center text-center py-2">
+        <article className="bg-[#F4F4F4] basis-1/2 flex flex-col items-center text-center py-2">
           <a href="/Productos/Plato">
             <h2 className="text-[35px] font-medium mt-9">Plato</h2>
             <p className="text-[#5397DC] font-regular text-lg mt-1 mb-5 hover:underline">
@@ -43,7 +43,7 @@ function Productos() {
             </p>
             <Image
               quality={`${quality}`}
-              src="/NS73-3.png"
+              src="/VW03-2.png"
               alt="Boletin #1"
               width={360}
               height={300}
@@ -52,7 +52,7 @@ function Productos() {
           </a>
         </article>
 
-        <article className="bg-gray-100 basis-1/2 flex flex-col items-center text-center py-2">
+        <article className="bg-[#F4F4F4] basis-1/2 flex flex-col items-center text-center py-2">
           <a href="/Productos/Disco">
             <h2 className="text-[35px] font-medium mt-9">Disco</h2>
             <p className="text-[#5397DC] font-regular text-lg mt-1 mb-5 hover:underline">
@@ -60,7 +60,7 @@ function Productos() {
             </p>
             <Image
               quality={`${quality}`}
-              src="/VW03-2.png"
+              src="/NS73-3.png"
               alt="Kit NS73-3"
               width={360}
               height={300}

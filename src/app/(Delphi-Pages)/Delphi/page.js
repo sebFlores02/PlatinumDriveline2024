@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CardDownload from "../../components/ContentConsumingCard";
 import BoletinCard from "../../components/BoletinCardDelphi";
+import CardDelphiProduct from "@/app/components/CardDelphiProduct";
 
 function page() {
   return (
@@ -26,7 +27,7 @@ function page() {
           className="mt-8"
         />
         <article className="flex flex-col md:flex-row bg-white rounded-2xl rounded-t-2xl mt-7">
-          <section className="bg-[#bcbcbc] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">
+          <section className="bg-[#e5e2e2] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">
             <Image
               quality={60}
               src="/CajaDelphi.png"
@@ -59,6 +60,7 @@ function page() {
             href={
               "http://www.delphicat.com/WebForms/frmDelphiHome.aspx?territory=6&language=8&yearFormat=EU&MMLRegion=1#1690820043905"
             }
+            page={"delphi"}
           />
           <CardDownload
             title={"Catálogo en PDF"}
@@ -67,95 +69,79 @@ function page() {
             }
             type={"download"}
             href={"/download/Cedula-1.pdf"}
+            page={"delphi"}
           />
         </section>
-        <section className="bg-[#c4c4c4] mt-10 mb-28 p-4 md:p-10 text-center rounded-2xl">
-          <h3 className="font-medium text-2xl py-3 lg:py-6">
-            Nuestros Boletines
-          </h3>
+        <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
+          <h3 className="text-3xl py-3 lg:py-5">Nuestros Boletines</h3>
           <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6">
             <BoletinCard
-              img={"BoletinVersa.jpeg"}
-              title={"Boletín técnico aplicación Nissan Versa"}
+              img={"BoletinDelphi1.jpg"}
+              title={"Diagnóstico de fallos"}
+              href={"BoletinDelphi1.jpg"}
             />
             <BoletinCard
-              img={"BoletinVersa.jpeg"}
-              title={"Boletín técnico aplicación Nissan Versa"}
-            />
-            <BoletinCard
-              img={"BoletinVersa.jpeg"}
-              title={"Boletín técnico aplicación Nissan Versa"}
+              img={"BoletinDelphi2.jpg"}
+              title={"Módulos De Combustible"}
+              href={"/download/BoletinDelphi2.pdf"}
             />
           </section>
         </section>
       </section>
       <section className="bg-azul_delphi px-5 lg:px-16 xl:px-28">
+        <h1 className="text-center py-16 text-white text-[32px] font-medium">
+          Suspensión
+        </h1>
+        <article className="flex flex-col-reverse md:flex-row bg-white rounded-2xl rounded-t-2xl">
+          <section className="basis-4/6 flex flex-col justify-center text-justify p-6 lg:p-16 leading-10">
+            <p>
+              Como parte integral de su conducción, manejo y seguridad, el
+              sistema de dirección de un vehículo debe estar a la altura del
+              trabajo. ¡Nos aseguramos de que así sea! ¿Cómo? Aplicando nuestra
+              experiencia en OE a nuestra cartera de direcciones del mercado de
+              repuestos. Es por eso que todas nuestras piezas se someten a
+              rigurosas pruebas de dimensiones, materiales, durabilidad y
+              rendimiento, lo que ayuda a garantizar que funcionen como el
+              equipo original. Es también por eso que ofrecemos capacitación
+              experta y soporte técnico. Brindándole todo lo que necesita para
+              reparar sistemas de dirección de manera segura, eficiente y
+              rentable.
+            </p>
+          </section>
+          <section className="bg-[#e5e2e2] rounded-r-2xl rounded-b-none rounded-t-2xl md:rounded-r-2xl md:rounded-l-none basis-2/6 flex flex-col items-center justify-center">
+            <Image
+              quality={60}
+              src="/grupalSuspension.png"
+              alt="Kit"
+              width={400}
+              height={400}
+            />
+          </section>
+        </article>
         <h2 className="text-center py-16 text-white text-[28px] font-medium">
           Nuestros Productos
         </h2>
-        <section className="flex flex-col sm:flex-row justify-center gap-5 xl:gap-20">
-          <article className="bg-white rounded-2xl">
-            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
-              <Image
-                quality={60}
-                src="/images/SensoresDemo.png"
-                alt="Kit"
-                width={500}
-                height={240}
-                className="rounded-2xl p-4"
-              />
-            </section>
-            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
-              Sensores
-            </p>
-          </article>
-          <article className="bg-white rounded-2xl">
-            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
-              <Image
-                quality={60}
-                src="/images/SensoresDemo.png"
-                alt="Kit"
-                width={500}
-                height={240}
-                className="rounded-2xl p-4"
-              />
-            </section>
-            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
-              Sensores
-            </p>
-          </article>
-        </section>
-        <section className="flex flex-col sm:flex-row justify-center gap-5 xl:gap-20 py-10">
-          <article className="bg-white rounded-2xl">
-            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
-              <Image
-                quality={60}
-                src="/images/SensoresDemo.png"
-                alt="Kit"
-                width={500}
-                height={240}
-                className="rounded-2xl p-4"
-              />
-            </section>
-            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
-              Sensores
-            </p>
-          </article>
-          <article className="bg-white rounded-2xl">
-            <section className="bg-gray-200 m-4 mb-0 rounded-2xl">
-              <Image
-                quality={60}
-                src="/images/SensoresDemo.png"
-                alt="Kit"
-                width={500}
-                height={240}
-                className="rounded-2xl p-4"
-              />
-            </section>
-            <p className="text-center font-medium py-5 sm:py-8 text-2xl">
-              Sensores
-            </p>
-          </article>
+        <section className="flex flex-col flex-wrap sm:flex-row justify-center gap-6 pb-28">
+          <CardDelphiProduct
+            image={"SensoresDemo"}
+            title={"Rotulas y Brazos Pitman"}
+          />
+          <CardDelphiProduct
+            image={"SensoresDemo"}
+            title={"Horquillas y tornillos estabilizadores"}
+          />
+          <CardDelphiProduct
+            image={"SensoresDemo"}
+            title={"Terminales  de direccion, externas e internas"}
+          />
+          <CardDelphiProduct
+            image={"SensoresDemo"}
+            title={"Tirantes de barra estabilizadora"}
+          />
+          <CardDelphiProduct
+            image={"SensoresDemo"}
+            title={"Bujes de horquillas"}
+          />
         </section>
       </section>
     </main>

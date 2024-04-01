@@ -20,7 +20,7 @@ function page() {
           description={"Guia de instalación"}
         />
         <Boletin
-          img={"Garantia.jpeg"}
+          img={"garantiaPlatinum.jpg"}
           title={"Boletín 3"}
           description={"Garantía"}
         />
