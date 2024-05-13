@@ -1,20 +1,16 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import Image from "next/image";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./styles.css";
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+const images = ["BANNER_1.jpg", "BANNER_2.jpg", "BANNER_3.jpg", "BANNER_4.jpg"];
 
 export default function App() {
   return (
@@ -23,7 +19,7 @@ export default function App() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -33,26 +29,16 @@ export default function App() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img
-            quality={60}
-            src="/images/TestPlatinumPortada.png"
-            alt="email"
-            width={100}
-            height={100}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            quality={60}
-            src="/images/TestPlatinumPortada.png"
-            alt="email"
-            width={100}
-            height={100}
-          />
-        </SwiperSlide>
-        {/* <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide> */}
+        {images.map((image) => (
+          <SwiperSlide>
+            <img
+              quality={60}
+              src={`/images/carrousel/${image}`}
+              alt="email"
+              className="bg-cover"
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

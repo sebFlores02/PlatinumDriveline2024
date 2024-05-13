@@ -21,7 +21,7 @@ export default function Home() {
           </Link>
         </ul>
       </nav>
-      <section className="flex flex-col sm:flex-row">
+      <section className="flex flex-col sm:flex-row px-10">
         <article className="basis-1/2 flex flex-col items-center">
           <h3 className="text-[40px] mt-8 sm:mt-0">Embrague</h3>
           <Image

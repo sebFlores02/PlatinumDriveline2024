@@ -104,7 +104,13 @@ function Header() {
           </section>
         </section>
       </section>
-      <nav className={`${isVisible ? "fixed w-full flex flex-col z-10" : ""}`}>
+      <nav
+        className={`${
+          isVisible
+            ? "fixed inset-0 overflow-y-auto w-full flex flex-col z-10"
+            : ""
+        }`}
+      >
         <section
           className={`${
             isVisible ? "bg-white" : "bg-gris_oscuro"

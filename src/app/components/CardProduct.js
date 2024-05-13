@@ -10,7 +10,7 @@ function CardProduct({ image, title, texto }) {
         alt="Kit"
         width={360}
         height={300}
-        className="rounded-t-[20px] w-full border-b"
+        className="rounded-t-[20px] w-full border-b py-8 px-4"
       />
       <h2 className="text-[25px] xl:text-[32px] font-medium pt-6 pb-3">
         {title}
