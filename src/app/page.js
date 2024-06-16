@@ -1,92 +1,134 @@
 import Image from "next/image";
-import Link from "next/link";
+import Productos from "./components/Productos";
+import CardDownload from "./components/ContentConsumingCard";
+import Carousel from "./components/Carousel/Carousel";
+import CardProduct from "./components/CardProduct";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Marcas from "./components/Marcas";
 
-export default function Home() {
+function page() {
+  let quality = 60;
+
   return (
-    <main className="bg-[url('/Background.png')] sm:bg-[url('/Background.png')] bg-cover w-full min-h-[100vh] text-white flex flex-col justify-between pb-14">
-      <nav className="flex justify-between px-4 md:px-12 lg:px-20">
-        <Image
-          src="/LOGOPlatinum.png"
-          width={200}
-          height={200}
-          alt="Logo Mel Abogados"
-          className="w-[40%] max-w-[200px] sm:w-full"
+    <main>
+      <Header />
+
+      <Carousel />
+
+      <Marcas />
+
+      <h1 className="py-6 lg:py-12">Nuevas Integraciones</h1>
+
+      <section className="flex justify-center flex-wrap gap-5 px-8 md:px-5 xl:px-24 2xl:px-60">
+        <CardProduct
+          image={"images/aplicaciones/TY07.jpg"}
+          title={"TY07-275HCE-01"}
+          texto={[
+            "Toyota Hiace",
+            "V6, 3.5 LTS. 24 V",
+            "GASOLINA 227 HP 2019-2023",
+            "Con CSC",
+          ]}
         />
-        <ul className="flex justify-between items-center font-medium text-white text-sm sm:text-[16px] gap-4 sm:gap-10 underline-offset-4">
-          <Link className="hover:underline" href="/QuienesSomos">
-            Sobre Nosotros
-          </Link>
-          <Link className="hover:underline" href="/Contacto">
-            Contacto
-          </Link>
-        </ul>
-      </nav>
-      <section className="flex flex-col sm:flex-row px-10">
-        <article className="basis-1/2 flex flex-col items-center">
-          <h3 className="text-[40px] mt-8 sm:mt-0">Embrague</h3>
-          <Image
-            quality={50}
-            src="/images/TestPlatinumPortada.png"
-            width={450}
-            height={450}
-            alt="imagen platinum"
-            className="py-[55px]"
-          />
-          <Link href="/Platinum">
-            <button className="border border-white rounded-lg px-9 py-3 hover:border-naranja hover:text-naranja">
-              Conoce Más
-            </button>
-          </Link>
-        </article>
-        <article className="basis-1/2 flex flex-col items-center justify-between">
-          <h3 className="text-[40px] mt-20 sm:mt-0">Suspensión</h3>
-          <Image
-            quality={50}
-            src="/CajaDelphi.png"
-            width={550}
-            height={550}
-            alt="imagen delphi"
-            className="py-[55px]"
-          />
-          <Link href="/Delphi">
-            <button className="border border-white rounded-lg px-9 py-3 hover:border-naranja hover:text-naranja">
-              Conoce Más
-            </button>
-          </Link>
-        </article>
+        <CardProduct
+          image={"images/aplicaciones/MB00-03.png"}
+          title={"MB00-240SPR-03"}
+          texto={[
+            "MERCEDES BENZ Sprinter",
+            "L4. 2.1, 16 VALV.",
+            "Con CSC",
+            "240 MM | 26D",
+          ]}
+        />
+        <CardProduct
+          image={"images/aplicaciones/HON03.png"}
+          title={"HON03-200FIT-01"}
+          texto={[
+            "FIT L4 1.5 LTS. DOHC 130HP. 15-20",
+            "CITY 11-19 SOHC 1.5",
+            "FIT 09-19 SOHC 1.5",
+            "FIT 4 CIL 1.5L 5 VEL 2009",
+          ]}
+        />
+        <CardProduct
+          image={"FD105-03.jpeg"}
+          title={"HIN04-300414-01"}
+          texto={[
+            "414 - 614",
+            "L4 4.0 Litros",
+            "TURBO DIESEL",
+            "5 VEL 2009 A 2019",
+          ]}
+        />
+        <CardProduct
+          image={"images/aplicaciones/MB04.png"}
+          title={"MB04-430OM460-01"}
+          texto={[
+            "MULTEGO OC 500",
+            "OM457 L6 12L 428HP",
+            "L6 12.8L 420HP",
+            "MBGO21OM",
+          ]}
+        />
+        <CardProduct
+          image={"images/aplicaciones/MB05.png"}
+          title={"MB05-BUS457-01"}
+          texto={[
+            "AUTOBUS MB 447-457",
+            "OM447",
+            "OM457 Transmisión ZF S6105",
+            "430 MM, 10D",
+          ]}
+        />
       </section>
-      <section className="flex justify-center items-center gap-8 mt-20 sm:mt-0">
-        <Link
-          href="https://www.facebook.com/PlatinumDrivelineMx/"
-          target="_blank"
-        >
-          <Image
-            src="/facebook.png"
-            width={25}
-            height={25}
-            alt="Logo Mel Abogados"
-            className="cursor-pointer"
+
+      <section className="px-6 lg:px-10 xl:px-40 bg-slate-200 mt-20 py-12">
+        <h1>Accede a Nuestro Contenido</h1>
+        <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
+          <CardDownload
+            title={"Catálogo Electrónico"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            type={"web"}
+            href={"https://catalogoplatinumdriveline.com"}
           />
-        </Link>
-        <Link href="https://wa.me/4423455370" target="_blank">
-          <Image
-            src="/whatsapp.png"
-            width={25}
-            height={25}
-            alt="Logo Mel Abogados"
-            className="cursor-pointer"
+          <CardDownload
+            title={"Catálogo Ligero"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            type={"web"}
+            href={
+              "https://drive.google.com/file/d/1VALiPiPlFG4SzS6s9B8Z4U9d5ZjGhgHf/view?usp=sharing"
+            }
           />
-        </Link>
-        <Link href="mailto:seb.flores2002@gmail.com">
-          <Image
-            src="/icons/emailWhiteNonCircular.png"
-            width={25}
-            height={25}
-            alt="Logo Mel Abogados"
-            className="cursor-pointer"
+        </section>
+        <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
+          <CardDownload
+            title={"Catálogo Diesel"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            type={"download"}
+            href={""}
           />
-        </Link>
+          <CardDownload
+            title={"Catálogo Volantes"}
+            content={
+              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+            }
+            type={"download"}
+            href={""}
+            volantes={true}
+          />
+        </section>
       </section>
+
+      <Footer />
     </main>
   );
 }
+
+export default page;

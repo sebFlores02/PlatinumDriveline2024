@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <main className="bg-gris_oscuro flex flex-col nav:flex-row justify-between items-center py-7 px-5 lg:px-16 mt-10">
+    <main className="bg-gris_oscuro flex flex-col nav:flex-row justify-between items-center py-7 px-5 lg:px-16">
       <div className="footer__logo basis-1/3">
         <Image
           quality={100}
