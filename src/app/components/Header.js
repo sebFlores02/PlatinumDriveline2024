@@ -1,51 +1,84 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-
-import { useState } from "react";
-
-import { Button } from "@/components/ui/button";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
-const NavItem = ({ href, text, icon }) => (
-  <li className="gap-3 text-lg w-full">
-    <Link className="flex flex-row justify-between" href={`/${href}`}>
-      {text}
-      <Image
-        quality={60}
-        src={`/${icon}`}
-        alt={"burger menu"}
-        width={24}
-        height={24}
-        className="float-end nav2:hidden"
-      />
-    </Link>
-  </li>
-);
+const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
+  if (text === "Otros Productos") {
+    return (
+      <li
+        className={`gap-3 text-lg text-center flex ${
+          isActive ? "border-b-2 border-naranja" : ""
+        }`}
+      >
+        <DropdownMenu>
+          <DropdownMenuTrigger className="flex flex-row gap-4 justify-between items-center">
+            {text}
+            <Image
+              quality={60}
+              src={
+                isVisible ? "/icons/arrowDownBlack.png" : "/icons/arrowDown.png"
+              }
+              alt="dropdown arrow"
+              width={isVisible ? 19 : 29}
+              height={isVisible ? 19 : 29}
+            />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <Link href="/Delphi">
+              <DropdownMenuItem>Delphi</DropdownMenuItem>
+            </Link>
+            <Link href="/Pastillas">
+              <DropdownMenuItem>Pastillas de Freno</DropdownMenuItem>
+            </Link>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </li>
+    );
+  }
+
+  return (
+    <li
+      className={`gap-3 text-lg text-center ${
+        isActive ? "border-b-2 border-naranja" : ""
+      }`}
+    >
+      <Link className="flex flex-row justify-between" href={href}>
+        {text}
+        <Image
+          quality={60}
+          src={isActive ? `/icons/active-${icon}` : `/icons/${icon}`}
+          alt="menu icon"
+          width={24}
+          height={24}
+          className="float-end nav2:hidden ml-3"
+        />
+      </Link>
+    </li>
+  );
+};
 
 function Header() {
   const menuItems = [
-    { href: "/", text: "Inicio", icon: "icons/next.png" },
-    { href: "QuienesSomos", text: "¿Quiénes Somos?", icon: "icons/next.png" },
-    { href: "Productos", text: "Producto", icon: "icons/next.png" },
-    { href: "Boletines", text: "Boletines", icon: "icons/next.png" },
-    { href: "Galeria", text: "Galería", icon: "icons/next.png" },
-    { href: "Contacto", text: "Contacto", icon: "icons/next.png" },
+    { href: "/", text: "Inicio", icon: "next.png" },
+    { href: "/QuienesSomos", text: "¿Quiénes Somos?", icon: "next.png" },
+    { href: "/Productos", text: "Componentes Embrague", icon: "next.png" },
+    { text: "Otros Productos", icon: "next.png" },
+    { href: "/Boletines", text: "Boletines", icon: "next.png" },
+    { href: "/Galeria", text: "Galería", icon: "next.png" },
+    { href: "/Contacto", text: "Contacto", icon: "next.png" },
   ];
+
   const [isVisible, setIsVisible] = useState(false);
-  const [position, setPosition] = useState("bottom");
-  const [isActive, setIsActive] = useState("inicio");
-  console.log(isActive);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsVisible(!isVisible);
@@ -80,7 +113,7 @@ function Header() {
         <section>
           <section className="flex gap-5 text-[#edeaea] py-1">
             <Link href="https://catalogoplatinumdriveline.com/" target="_blank">
-              <article className=" flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
+              <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
                   src="/icons/webBlack.png"
@@ -97,7 +130,7 @@ function Header() {
               href="https://drive.google.com/file/d/1VALiPiPlFG4SzS6s9B8Z4U9d5ZjGhgHf/view?usp=sharing"
               download
             >
-              <article className=" flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
+              <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
                   src="/icons/webBlack.png"
@@ -141,90 +174,34 @@ function Header() {
             onClick={toggleMenu}
             quality={60}
             src={isVisible ? "/icons/close.png" : "/icons/menu.png"}
-            alt={"burger menu"}
+            alt="burger menu"
             width={25}
             height={25}
             className="float-end nav2:hidden"
           />
-
-          <ul className="hidden nav2:flex gap-10 text-white justify-center">
-            <li
-              className={` ${
-                isActive === "inicio" ? "border-b-2 border-naranja" : ""
-              }`}
-            >
-              <a href="/">Inicio</a>
-            </li>
-            <li
-              onClick={() => setIsActive("quienes_somos")}
-              className={`${
-                isActive === "quienes_somos" ? "border-b border-naranja" : ""
-              }`}
-            >
-              <a href="/QuienesSomos">¿Quiénes Somos?</a>
-            </li>
-            <li
-              onClick={() => setIsActive("productos")}
-              className={`${
-                isActive === "productos" ? "border-b border-naranja" : ""
-              }`}
-            >
-              <a href="/Productos">Componentes Embrague</a>
-            </li>
-            <li className="flex gap-3">
-              <p>Otras Marcas</p>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Image
-                    quality={60}
-                    src={"/icons/arrowDown.png"}
-                    alt={"arrow"}
-                    width={25}
-                    height={25}
-                    className="hover:cursor-pointer"
-                  />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56">
-                  <Link href="/Delphi">
-                    <DropdownMenuRadioItem value="top">
-                      Delphi
-                    </DropdownMenuRadioItem>
-                  </Link>
-                  <DropdownMenuSeparator />
-                  <Link href="/Pastillas">
-                    <DropdownMenuRadioItem value="bottom">
-                      Pastillas de Freno
-                    </DropdownMenuRadioItem>
-                  </Link>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </li>
-            <li>
-              <a href="/Boletines">Boletines</a>
-            </li>
-            <li>
-              <a href="/Galeria">Galería</a>
-            </li>
-            <li>
-              <a href="/Contacto">Contacto</a>
-            </li>
+          <ul className="hidden nav2:flex gap-10 text-white justify-end w-[80%] items-center">
+            {menuItems.map((item) => (
+              <NavItem
+                key={item.href}
+                href={item.href}
+                text={item.text}
+                icon={item.icon}
+                isActive={pathname === item.href}
+                isVisible={isVisible}
+              />
+            ))}
           </ul>
         </section>
-
         {isVisible && (
           <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium nav2:hidden px-6">
             <ul className="flex flex-col justify-center gap-7 bg-[#F4F4F4] rounded-2xl py-7 px-7">
-              {menuItems.map((item, index, icon) => (
+              {menuItems.map((item, index) => (
                 <article
                   onClick={toggleMenu}
                   className="flex justify-between py-4"
                   key={index}
                 >
-                  <NavItem key={index} {...item} image={icon} />
-
-                  {/* {index < menuItems.length - 1 && (
-                    <div className="w-[200px] border-gray-300 border float-end mt-5"></div>
-                  )} */}
+                  <NavItem key={index} {...item} />
                 </article>
               ))}
               <Link
