@@ -133,7 +133,7 @@ function Header() {
               <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
-                  src="/icons/webBlack.png"
+                  src="/icons/downloadBlack.png"
                   alt="email"
                   width={23}
                   height={23}

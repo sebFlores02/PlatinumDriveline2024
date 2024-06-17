@@ -10,7 +10,7 @@ const Marcas = () => {
     <div className="bg-slate-100 px-10">
       <h1 className="py-6 lg:py-12 text-black">Nuestros Productos</h1>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto items-center place-items-center">
-        <article className="mb-20 border rounded-lg shadow">
+        <article className="mb-20 border border-slate-300 rounded-lg shadow">
           <Image
             width={400}
             height={400}
@@ -28,7 +28,7 @@ const Marcas = () => {
             </Link>
           </section>
         </article>
-        <article className="mb-20 border rounded-lg shadow h-cover">
+        <article className="mb-20 border border-slate-300 rounded-lg shadow h-cover">
           <Image
             width={400}
             height={400}
@@ -46,7 +46,7 @@ const Marcas = () => {
             </Link>
           </section>
         </article>
-        <article className="mb-20 border rounded-lg shadow">
+        <article className="mb-20 border border-slate-300 rounded-lg shadow">
           <Image
             width={400}
             height={400}
