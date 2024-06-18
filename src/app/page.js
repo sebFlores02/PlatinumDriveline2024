@@ -21,7 +21,7 @@ function page() {
 
       <h1 className="py-6 lg:py-12">Nuevas Integraciones</h1>
 
-      <section className="flex justify-center flex-wrap gap-5 px-8 md:px-5 xl:px-24 2xl:px-60">
+      <section className="grid grid-cols-1 sm:grid-cols-2 nav:grid-cols-3 gap-5 px-6 sm:px-5 xl:px-24 2xl:px-40">
         <CardProduct
           image={"images/aplicaciones/TY07.jpg"}
           title={"TY07-275HCE-01"}
@@ -84,7 +84,7 @@ function page() {
         />
       </section>
 
-      <section className="px-6 lg:px-10 xl:px-40 bg-slate-200 mt-20 py-12">
+      <section className="px-6 lg:px-10 xl:px-40 bg-[#F4F4F4] mt-20 py-12">
         <h1>Accede a Nuestro Contenido</h1>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload

@@ -19,8 +19,16 @@ function ContentConsumingCard({ title, content, type, href, page, volantes }) {
     }
   };
 
+  const getColorBg = (page) => {
+    return page === "platinum" ? "bg-[#FFFFFF]" : "bg-[#F4F4F4]";
+  };
+
   return (
-    <main className="bg-[#F4F4F4] text-center w-full max-w-[750px] rounded-2xl">
+    <main
+      className={`${getColorBg(
+        page
+      )} shadow text-center w-full max-w-[750px] rounded-2xl`}
+    >
       {!volantes ? (
         <a href={href} {...linkProps}>
           <section

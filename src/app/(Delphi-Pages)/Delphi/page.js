@@ -71,6 +71,7 @@ function page() {
             type={"download"}
             href={"/download/Cedula-1.pdf"}
             page={"delphi"}
+            volantes={true}
           />
         </section>
         <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
@@ -124,25 +125,22 @@ function page() {
         </h2>
         <section className="flex flex-col flex-wrap sm:flex-row justify-center gap-6 pb-28">
           <CardDelphiProduct
-            image={"SensoresDemo"}
+            image={"rotulaBrazo"}
             title={"Rotulas y Brazos Pitman"}
           />
           <CardDelphiProduct
-            image={"SensoresDemo"}
+            image={"horquillasTornillos"}
             title={"Horquillas y tornillos estabilizadores"}
           />
           <CardDelphiProduct
-            image={"SensoresDemo"}
+            image={"terminales"}
             title={"Terminales  de direccion, externas e internas"}
           />
           <CardDelphiProduct
-            image={"SensoresDemo"}
+            image={"barraEstabilizadora"}
             title={"Tirantes de barra estabilizadora"}
           />
-          <CardDelphiProduct
-            image={"SensoresDemo"}
-            title={"Bujes de horquillas"}
-          />
+          <CardDelphiProduct image={"buje"} title={"Bujes de horquillas"} />
         </section>
       </section>
     </main>
