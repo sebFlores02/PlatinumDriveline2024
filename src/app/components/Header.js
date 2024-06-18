@@ -1,37 +1,84 @@
 "use client";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import Link from "next/link";
-
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const NavItem = ({ href, text, icon }) => (
-  <li className="gap-3 text-lg w-full">
-    <Link className="flex flex-row justify-between" href={`/${href}`}>
-      {text}
-      <Image
-        quality={60}
-        src={`/${icon}`}
-        alt={"burger menu"}
-        width={24}
-        height={24}
-        className="float-end nav2:hidden"
-      />
-    </Link>
-  </li>
-);
+const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
+  if (text === "Otros Productos") {
+    return (
+      <li
+        className={`gap-3 text-base font-light text-center flex ${
+          isActive ? "border-b-2 border-naranja" : ""
+        }`}
+      >
+        <DropdownMenu>
+          <DropdownMenuTrigger className="flex flex-row gap-4 justify-between items-center">
+            {text}
+            <Image
+              quality={60}
+              src={
+                isVisible ? "/icons/arrowDownBlack.png" : "/icons/arrowDown.png"
+              }
+              alt="dropdown arrow"
+              width={isVisible ? 19 : 24}
+              height={isVisible ? 19 : 24}
+            />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <Link href="/Delphi">
+              <DropdownMenuItem>Delphi</DropdownMenuItem>
+            </Link>
+            <Link href="/Pastillas">
+              <DropdownMenuItem>Pastillas de Freno</DropdownMenuItem>
+            </Link>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </li>
+    );
+  }
+
+  return (
+    <li
+      className={`gap-3 text-base font-light text-center ${
+        isActive ? "border-b-2 border-naranja" : ""
+      }`}
+    >
+      <Link className="flex flex-row justify-between" href={href}>
+        {text}
+        <Image
+          quality={60}
+          src={isActive ? `/icons/active-${icon}` : `/icons/${icon}`}
+          alt="menu icon"
+          width={24}
+          height={24}
+          className="float-end nav2:hidden ml-3"
+        />
+      </Link>
+    </li>
+  );
+};
 
 function Header() {
   const menuItems = [
-    { href: "/", text: "Inicio", icon: "icons/next.png" },
-    { href: "Platinum", text: "Embrague", icon: "icons/next.png" },
-    { href: "QuienesSomos", text: "¿Quiénes Somos?", icon: "icons/next.png" },
-    { href: "Productos", text: "Producto", icon: "icons/next.png" },
-    { href: "Boletines", text: "Boletines", icon: "icons/next.png" },
-    { href: "Galeria", text: "Galería", icon: "icons/next.png" },
-    { href: "Contacto", text: "Contacto", icon: "icons/next.png" },
+    { href: "/", text: "Inicio", icon: "next.png" },
+    { href: "/QuienesSomos", text: "¿Quiénes Somos?", icon: "next.png" },
+    { href: "/Productos", text: "Componentes Embrague", icon: "next.png" },
+    { text: "Otros Productos", icon: "next.png" },
+    { href: "/Boletines", text: "Boletines", icon: "next.png" },
+    { href: "/Galeria", text: "Galería", icon: "next.png" },
+    { href: "/Contacto", text: "Contacto", icon: "next.png" },
   ];
+
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsVisible(!isVisible);
@@ -39,8 +86,8 @@ function Header() {
 
   return (
     <main>
-      <section className="hidden nav2:flex bg-naranja px-[50px] 2xl:px-[100px] py-2 justify-between items-center">
-        <section className="flex gap-4">
+      <section className="hidden nav2:flex bg-naranja px-[50px] 2xl:px-[60px] py-3 justify-between items-center">
+        <section className="flex gap-5">
           <Link
             href="https://www.facebook.com/PlatinumDrivelineMx/"
             target="_blank"
@@ -49,17 +96,8 @@ function Header() {
               quality={60}
               src="/icons/facebookWhite.png"
               alt="facebook"
-              width={29}
-              height={29}
-            />
-          </Link>
-          <Link href="https://wa.me/4423455370" target="_blank">
-            <Image
-              quality={60}
-              src="/icons/whatsappWhite.png"
-              alt="whatsapp"
-              width={29}
-              height={29}
+              width={34}
+              height={34}
             />
           </Link>
           <Link href="mailto:seb.flores2002@gmail.com">
@@ -67,38 +105,42 @@ function Header() {
               quality={60}
               src="/icons/emailWhite.png"
               alt="email"
-              width={29}
-              height={29}
+              width={34}
+              height={34}
             />
           </Link>
         </section>
         <section>
-          <section className="flex gap-5 text-[#edeaea]">
+          <section className="flex gap-5 text-[#edeaea] py-1">
             <Link href="https://catalogoplatinumdriveline.com/" target="_blank">
-              <article className=" flex items-center px-5 gap-3 rounded-lg hover:underline">
+              <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
-                  src="/icons/web.png"
+                  src="/icons/webBlack.png"
                   alt="email"
-                  width={30}
-                  height={30}
+                  width={23}
+                  height={23}
                 />
-                <p>Visita el Catálogo Electrónico</p>
+                <p className="font-medium text-gris_oscuro hover:underline">
+                  Visita el Catálogo Electrónico
+                </p>
               </article>
             </Link>
             <Link
               href="https://drive.google.com/file/d/1VALiPiPlFG4SzS6s9B8Z4U9d5ZjGhgHf/view?usp=sharing"
               download
             >
-              <article className=" flex items-center px-5 gap-3 rounded-lg hover:underline">
+              <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
-                  src="/icons/web.png"
+                  src="/icons/downloadBlack.png"
                   alt="email"
-                  width={30}
-                  height={30}
+                  width={23}
+                  height={23}
                 />
-                <p>Descarga el Catálogo Ligero</p>
+                <p className="font-medium text-gris_oscuro hover:underline">
+                  Descarga el Catálogo Ligero
+                </p>
               </article>
             </Link>
           </section>
@@ -114,7 +156,7 @@ function Header() {
         <section
           className={`${
             isVisible ? "bg-white" : "bg-gris_oscuro"
-          } flex justify-between items-center md:pl-10 pr-7 md:pr-20 xl:px-[200px] h-[10vh] py-12`}
+          } flex justify-between items-center md:pl-10 pr-7 md:pr-20 xl:px-[100px] h-[10vh] py-10`}
         >
           <section className="flex gap-4 items-center">
             <Link href="/">
@@ -123,8 +165,8 @@ function Header() {
                 src="/LOGOPlatinum.png"
                 alt="Kit"
                 width={200}
-                height={130}
-                className="min-h-[130px] min-w-[200px]"
+                height={200}
+                className="min-w-[200px]"
               />
             </Link>
           </section>
@@ -132,50 +174,34 @@ function Header() {
             onClick={toggleMenu}
             quality={60}
             src={isVisible ? "/icons/close.png" : "/icons/menu.png"}
-            alt={"burger menu"}
+            alt="burger menu"
             width={25}
             height={25}
             className="float-end nav2:hidden"
           />
-
-          <ul className="hidden nav2:flex gap-10 text-white justify-center">
-            <li>
-              <a href="/">Inicio</a>
-            </li>
-            <li>
-              <a href="/Platinum">Embrague</a>
-            </li>
-            <li>
-              <a href="/QuienesSomos">¿Quiénes Somos?</a>
-            </li>
-            <li>
-              <a href="/Productos">Producto</a>
-            </li>
-            <li>
-              <a href="/Boletines">Boletines</a>
-            </li>
-            <li>
-              <a href="/Galeria">Galería</a>
-            </li>
-            <li>
-              <a href="/Contacto">Contacto</a>
-            </li>
+          <ul className="hidden nav2:flex gap-10 text-white justify-end w-[80%] items-center">
+            {menuItems.map((item) => (
+              <NavItem
+                key={item.href}
+                href={item.href}
+                text={item.text}
+                icon={item.icon}
+                isActive={pathname === item.href}
+                isVisible={isVisible}
+              />
+            ))}
           </ul>
         </section>
         {isVisible && (
           <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium nav2:hidden px-6">
             <ul className="flex flex-col justify-center gap-7 bg-[#F4F4F4] rounded-2xl py-7 px-7">
-              {menuItems.map((item, index, icon) => (
+              {menuItems.map((item, index) => (
                 <article
                   onClick={toggleMenu}
                   className="flex justify-between py-4"
                   key={index}
                 >
-                  <NavItem key={index} {...item} image={icon} />
-
-                  {/* {index < menuItems.length - 1 && (
-                    <div className="w-[200px] border-gray-300 border float-end mt-5"></div>
-                  )} */}
+                  <NavItem key={index} {...item} />
                 </article>
               ))}
               <Link

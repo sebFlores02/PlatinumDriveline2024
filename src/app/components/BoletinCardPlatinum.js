@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function BoletinCardDelphi({ img, title, description }) {
   return (
-    <main className="rounded-xl bg-[#F4F4F4] border w-full sm:w-[48%] lg:w-[31%] lg:min-h-[580px] mb-8">
+    <main className="rounded-xl bg-[#F4F4F4] border border-slate-300 w-full sm:w-[48%] lg:w-[31%] lg:min-h-[580px] mb-8">
       <a href={`/download/${img}`} download>
         <Image
           quality={100}

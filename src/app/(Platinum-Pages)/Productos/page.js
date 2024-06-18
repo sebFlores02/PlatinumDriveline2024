@@ -1,3 +1,4 @@
+import ContactButton from "@/app/components/ContactButton";
 import Image from "next/image";
 import Productos from "../../components/Productos";
 
@@ -59,6 +60,8 @@ function page() {
         </article>
       </section>
       <Productos />
+
+      <ContactButton />
     </main>
   );
 }

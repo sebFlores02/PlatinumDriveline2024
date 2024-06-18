@@ -1,3 +1,4 @@
+import ContactButton from "@/app/components/ContactButton";
 import Image from "next/image";
 import Boletin from "../../components/BoletinCardPlatinum";
 
@@ -58,6 +59,7 @@ function page() {
           description={"Especificaciones para rectificado de volantes"}
         />
       </section>
+      <ContactButton />
     </main>
   );
 }
