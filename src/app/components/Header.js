@@ -15,7 +15,7 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
   if (text === "Otros Productos") {
     return (
       <li
-        className={`gap-3 text-lg text-center flex ${
+        className={`gap-3 text-base font-light text-center flex ${
           isActive ? "border-b-2 border-naranja" : ""
         }`}
       >
@@ -28,8 +28,8 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
                 isVisible ? "/icons/arrowDownBlack.png" : "/icons/arrowDown.png"
               }
               alt="dropdown arrow"
-              width={isVisible ? 19 : 29}
-              height={isVisible ? 19 : 29}
+              width={isVisible ? 19 : 24}
+              height={isVisible ? 19 : 24}
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
@@ -47,7 +47,7 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
 
   return (
     <li
-      className={`gap-3 text-lg text-center ${
+      className={`gap-3 text-base font-light text-center ${
         isActive ? "border-b-2 border-naranja" : ""
       }`}
     >
@@ -86,8 +86,8 @@ function Header() {
 
   return (
     <main>
-      <section className="hidden nav2:flex bg-naranja px-[50px] 2xl:px-[60px] py-2 justify-between items-center">
-        <section className="flex gap-4">
+      <section className="hidden nav2:flex bg-naranja px-[50px] 2xl:px-[60px] py-3 justify-between items-center">
+        <section className="flex gap-5">
           <Link
             href="https://www.facebook.com/PlatinumDrivelineMx/"
             target="_blank"
@@ -96,8 +96,8 @@ function Header() {
               quality={60}
               src="/icons/facebookWhite.png"
               alt="facebook"
-              width={29}
-              height={29}
+              width={34}
+              height={34}
             />
           </Link>
           <Link href="mailto:seb.flores2002@gmail.com">
@@ -105,8 +105,8 @@ function Header() {
               quality={60}
               src="/icons/emailWhite.png"
               alt="email"
-              width={29}
-              height={29}
+              width={34}
+              height={34}
             />
           </Link>
         </section>
@@ -121,7 +121,7 @@ function Header() {
                   width={23}
                   height={23}
                 />
-                <p className="font-bold text-gris_oscuro hover:underline">
+                <p className="font-medium text-gris_oscuro hover:underline">
                   Visita el Catálogo Electrónico
                 </p>
               </article>
@@ -138,7 +138,7 @@ function Header() {
                   width={23}
                   height={23}
                 />
-                <p className="font-bold text-gris_oscuro hover:underline">
+                <p className="font-medium text-gris_oscuro hover:underline">
                   Descarga el Catálogo Ligero
                 </p>
               </article>

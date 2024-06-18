@@ -37,14 +37,15 @@ function page() {
             />
           </section>
           <p className="basis-4/6 text-justify p-8 lg:p-16 leading-10 flex flex-col items-center justify-center">
-            With a presence in more than 150 countries, and a global network of
-            over 2,750 service centers, Delphi provides OE specification
-            end-to-end solutions. With a wide-ranging portfolio including
-            gasoline fuel systems, diesel fuel systems, maintenance solutions,
-            engine management and vehicle electronics, backed by OE-level
-            diagnostic and test equipment, training and technical information,
-            Delphi enables garages to service and repair vehicles right the
-            first time.
+            Con presencia en más de 150 países y una red global de más de 2750
+            centros de servicio, Delphi proporciona soluciones integrales con
+            especificaciones OE. Con una amplia cartera que incluye sistemas de
+            combustible de gasolina, sistemas de combustible diesel, soluciones
+            de mantenimiento, gestión de motores y Electrónica del vehículo,
+            respaldada por equipos de prueba y diagnóstico de nivel OE,
+            capacitación y asistencia técnica. información, Delphi permite a los
+            talleres dar servicio y reparar vehículos correctamente desde la
+            primera vez.
           </p>
         </article>
       </section>
@@ -58,7 +59,7 @@ function page() {
             }
             type={"web"}
             href={
-              "http://www.delphicat.com/WebForms/frmDelphiHome.aspx?territory=6&language=8&yearFormat=EU&MMLRegion=1#1690820043905"
+              "https://www.delphiautoparts.com/es/cat%C3%A1logo-de-piezas?make=&model=&engine=&year=&vehicle=&product="
             }
             page={"delphi"}
           />
@@ -118,7 +119,7 @@ function page() {
             />
           </section>
         </article>
-        <h2 className="text-center py-16 text-white text-[28px] font-medium">
+        <h2 className="text-center py-16 text-white text-[32px] font-medium">
           Nuestros Productos
         </h2>
         <section className="flex flex-col flex-wrap sm:flex-row justify-center gap-6 pb-28">

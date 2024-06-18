@@ -13,7 +13,7 @@ const CardDelphiProduct = ({ image, title }) => {
           className="rounded-2xl p-4"
         />
       </section>
-      <p className="text-center font-medium py-5 my-auto px-4 text-lg lg:text-xl">
+      <p className="text-center font-medium py-7 my-auto px-4 lg:px-8 text-lg lg:text-2xl">
         {title}
       </p>
     </main>

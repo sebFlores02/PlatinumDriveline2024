@@ -8,16 +8,25 @@ function ContentConsumingCard({ title, content, type, href, page, volantes }) {
     linkProps.download = true;
   }
 
+  const getColor = (page) => {
+    switch (page) {
+      case "delphi":
+        return "bg-azul_delphi";
+      case "platinum":
+        return "bg-naranja";
+      case "pastillas":
+        return "bg-azul_pastillas";
+    }
+  };
+
   return (
-    <main className="bg-[#F4F4F4] text-center w-full rounded-2xl">
+    <main className="bg-[#F4F4F4] text-center w-full max-w-[750px] rounded-2xl">
       {!volantes ? (
         <a href={href} {...linkProps}>
           <section
-            className={
-              page === "delphi"
-                ? `bg-azul_delphi rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`
-                : `bg-naranja rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`
-            }
+            className={`${getColor(
+              page
+            )} rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`}
           >
             <Image
               quality={60}
@@ -37,11 +46,9 @@ function ContentConsumingCard({ title, content, type, href, page, volantes }) {
       ) : (
         <>
           <section
-            className={
-              page === "delphi"
-                ? `bg-azul_delphi rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`
-                : `bg-naranja rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`
-            }
+            className={`${getColor(
+              page
+            )} rounded-2xl w-[145px] h-[116px] flex flex-col items-center justify-center mx-auto mt-[-70px]`}
           >
             <Image
               quality={60}
@@ -58,7 +65,10 @@ function ContentConsumingCard({ title, content, type, href, page, volantes }) {
             {content}
           </p>
           {volantes && (
-            <section className="bg-naranja rounded-b-2xl text-white uppercase py-2 font-bold">
+            <section
+              className={`
+              bg-gris_oscuro rounded-b-2xl text-white uppercase py-2 font-bold`}
+            >
               <p>Proximamente</p>
             </section>
           )}

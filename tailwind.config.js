@@ -42,6 +42,7 @@ module.exports = {
         gris_oscuro: "#303030",
         gris_ligero: "#707070",
         azul_delphi: "#004aca",
+        azul_pastillas: "#222F54",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

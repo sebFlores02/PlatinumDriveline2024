@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import ContactButton from "@/app/components/ContactButton";
 
 export default function Contacto() {
   const [state, setState] = useState();
@@ -51,9 +52,11 @@ export default function Contacto() {
 
   return (
     <main className="flex flex-col items-center">
-      <h1 className="py-6 lg:py-12">Llene el formulario de Contacto</h1>
+      <h1 className="hidden md:block py-6 lg:py-12">
+        Llene el formulario de Contacto
+      </h1>
       <section className="md:flex w-full justify-between gap-4 px-5 md:px-10">
-        <section className="lg:w-1/3 bg-slate-100 border rounded-xl p-8 mb-10 md:mb-32">
+        <section className="lg:w-1/3 bg-slate-100 border rounded-xl p-8 mb-10 md:mb-32 mt-6 md:mt-0">
           <h2 className="font-bold text-2xl md:text-3xl">
             Información de Contacto
           </h2>
@@ -66,7 +69,19 @@ export default function Contacto() {
               width={30}
               height={30}
             />
-            <p className="font-medium text-lg">442-231-4471</p>
+            <p className="font-base text-lg">446 138 5347</p>
+          </div>
+          <div className="flex items-center space-x-3 mt-5">
+            <Image
+              quality={60}
+              src="/icons/emailJet.png"
+              alt="Kit"
+              width={30}
+              height={30}
+            />
+            <p className="font-b text-base text">
+              soporte@platinumdriveline.mx
+            </p>
           </div>
           <Separator className="border border-slate-200 mt-5" />
           <p className="my-5 font-semibold text-lg">Ventas:</p>
@@ -78,19 +93,17 @@ export default function Contacto() {
               width={30}
               height={30}
             />
-            <p className="font-medium text-lg">442-231-4471</p>
+            <p className="font-base text-lg">442 345 5370</p>
           </div>
-          <Separator className="border border-slate-200 mt-5" />
-          <p className="my-5 font-semibold text-lg">Correo Electrónico:</p>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-cenaseter space-x-3 mt-5">
             <Image
               quality={60}
-              src="/icons/email.png"
+              src="/icons/emailJet.png"
               alt="Kit"
               width={30}
               height={30}
             />
-            <p className="font-medium text-lg">sefasf2015@gmail.com</p>
+            <p className="font-b text-base">ventas@platinumdriveline.mx</p>
           </div>
           <Separator className="border border-slate-200 mt-5" />
           <p className="my-5 font-semibold text-lg">Ubicación:</p>
@@ -102,10 +115,15 @@ export default function Contacto() {
               width={30}
               height={30}
             />
-            <p className="font-medium text-lg">Santiago de Querétaro</p>
+            <p className="font-base text-base">Santiago de Querétaro</p>
           </div>
         </section>
-        <form className="px-5 w-full lg:w-4/6 pb-12" onSubmit={handleOnSubmit}>
+        <h2 className="md:hidden text-center font-medium text-3xl py-0 pb-8 px-4 lg:py-8">
+          Llene el formulario de Contacto
+        </h2>
+        {/* padding-bottom: 20px; padding-inline: 20px; font-weight: 300;
+        text-align: center; font-size: 50px; */}
+        <form className="px-2 w-full lg:w-4/6 pb-12" onSubmit={handleOnSubmit}>
           {alert && (
             <section className="bg-[#E7FFEC] border border-[#ACD2BC] text-[#06842E] py-4 rounded-2xl px-10 mb-8 flex flex-col sm:flex-row gap-3 md:gap-6 items-center text-center">
               <Image
@@ -186,6 +204,7 @@ export default function Contacto() {
           </div>
         </form>
       </section>
+      <ContactButton />
     </main>
   );
 }

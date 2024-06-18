@@ -6,6 +6,7 @@ import CardProduct from "./components/CardProduct";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Marcas from "./components/Marcas";
+import ContactButton from "./components/ContactButton";
 
 function page() {
   let quality = 60;
@@ -87,6 +88,7 @@ function page() {
         <h1>Accede a Nuestro Contenido</h1>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
+            page={"platinum"}
             title={"Catálogo Electrónico"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
@@ -95,6 +97,7 @@ function page() {
             href={"https://catalogoplatinumdriveline.com"}
           />
           <CardDownload
+            page={"platinum"}
             title={"Catálogo Ligero"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
@@ -107,6 +110,7 @@ function page() {
         </section>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 sm:gap-4 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
+            page={"platinum"}
             title={"Catálogo Diesel"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
@@ -115,6 +119,7 @@ function page() {
             href={""}
           />
           <CardDownload
+            page={"platinum"}
             title={"Catálogo Volantes"}
             content={
               "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
@@ -125,6 +130,8 @@ function page() {
           />
         </section>
       </section>
+
+      <ContactButton />
 
       <Footer />
     </main>
