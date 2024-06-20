@@ -55,7 +55,7 @@ function page() {
           <CardDownload
             title={"Catálogo Electrónico"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Explora el catálogo electrónico de Delphi para encontrar la mejor selección de componentes de suspensión. Delphi ofrece soluciones innovadoras y de alta calidad disponibles globalmente."
             }
             type={"web"}
             href={
@@ -66,7 +66,7 @@ function page() {
           <CardDownload
             title={"Catálogo en PDF"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Descarga el catálogo en PDF de Delphi. Tendrás acceso a información detallada sobre nuestros componentes de suspensión y sus aplicaciones."
             }
             type={"download"}
             href={"/download/Cedula-1.pdf"}

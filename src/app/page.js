@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Productos from "./components/Productos";
 import CardDownload from "./components/ContentConsumingCard";
 import Carousel from "./components/Carousel/Carousel";
 import CardProduct from "./components/CardProduct";
@@ -84,14 +82,14 @@ function page() {
         />
       </section>
 
-      <section className="px-6 lg:px-10 xl:px-40 bg-[#F4F4F4] mt-20 py-12">
-        <h1>Accede a Nuestro Contenido</h1>
+      <section className="px-6 lg:px-10 xl:px-40 bg-gris_ligero mt-20 py-12">
+        <h1 className="text-white">Accede a Nuestro Contenido</h1>
         <section className="mt-28 flex flex-col md:flex-row justify-center gap-24 md:gap-8 lg:gap-6 xl:gap-10">
           <CardDownload
             page={"platinum"}
             title={"Catálogo Electrónico"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Accede al catálogo electrónico de Platinum Driveline para explorar nuestra amplia gama de componentes de clutch. Descubre productos de alta calidad y tecnología avanzada."
             }
             type={"web"}
             href={"https://catalogoplatinumdriveline.com"}
@@ -100,7 +98,7 @@ function page() {
             page={"platinum"}
             title={"Catálogo Ligero"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Consulta el catálogo de vehículos ligeros de Platinum Driveline. Encuentra componentes diseñados para ofrecer el mejor rendimiento y durabilidad en automóviles ligeros."
             }
             type={"web"}
             href={
@@ -113,7 +111,7 @@ function page() {
             page={"platinum"}
             title={"Catálogo Diesel"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Explora el catálogo de productos diesel de Platinum Driveline. Nuestra selección incluye componentes robustos y fiables, ideales para vehículos diesel."
             }
             type={"download"}
             href={""}
@@ -122,7 +120,7 @@ function page() {
             page={"platinum"}
             title={"Catálogo Volantes"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              " Descubre nuestra nueva línea de volantes de alta precisión. Mantente atento para obtener los mejores componentes de volante que mejoran el control y la seguridad en cada conducción."
             }
             type={"download"}
             href={""}

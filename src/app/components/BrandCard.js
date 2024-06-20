@@ -4,7 +4,15 @@ import React from "react";
 
 const BrandCard = ({ image, text, brand, link, text_button }) => {
   const getColor = (brand) => {
-    return brand === "PLATINUM DRIVELINE" ? "naranja" : "azul_delphi";
+    switch (text) {
+      case "Pastilla de Freno":
+        return "azul_pastillas";
+      case "Componente Embrague":
+        return "naranja";
+      case "Suspensión":
+        return "azul_delphi";
+    }
+    // return brand === "PLATINUM DRIVELINE" ? "naranja" : "azul_delphi";
   };
 
   return (
@@ -13,7 +21,7 @@ const BrandCard = ({ image, text, brand, link, text_button }) => {
         width={400}
         height={400}
         alt="marca"
-        className="h-[300px] p-4 mx-auto"
+        className="h-[300px] p-4 w-full mx-auto bg-white rounded-t-lg"
         src={image}
       />
       <section className="px-10 py-6 border-t-2 bg-slate-200 flex flex-col flex-grow">

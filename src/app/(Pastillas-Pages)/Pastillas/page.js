@@ -1,8 +1,5 @@
 import Image from "next/image";
 import CardDownload from "../../components/ContentConsumingCard";
-import BoletinCard from "../../components/BoletinCardDelphi";
-import CardDelphiProduct from "@/app/components/CardDelphiProduct";
-import BoletinCardDelphi from "@/app/components/BoletinCardPlatinum";
 
 function page() {
   return (
@@ -19,18 +16,12 @@ function page() {
             <p className="text-white">Regresar</p>
           </button>
         </a>
-        {/* <Image
-          quality={60}
-          src="/Delphi_logo.png"
-          alt="Kit"
-          width={200}
-          height={200}
-          className="mt-8"
-        /> */}
         <h2 className="font-bold text-white text-5xl mt-12">
           Pastillas de Freno
         </h2>
-        <p className="font-bold text-naranja mt-3 mb-10">PLATINUM DRIVELINE</p>
+        <p className="font-bold text-[#dbdddd] mt-5 mb-10">
+          PLATINUM DRIVELINE
+        </p>
 
         <article className="flex flex-col md:flex-row bg-white rounded-2xl rounded-t-2xl mt-7">
           <section className="bg-[#e5e2e2] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">
@@ -61,7 +52,7 @@ function page() {
             page={"pastillas"}
             title={"Catálogo Pastillas de Freno"}
             content={
-              "With a presence in more than 150 countries, and a global network of over 2,750 service centers, Delphi provides."
+              "Explora el catálogo de pastillas de freno de Platinum Driveline. Conoce nuestra línea de productos desarrollados para garantizar una frenada eficiente y segura."
             }
             type={"download"}
             href={""}
@@ -116,7 +107,7 @@ function page() {
         </section>
       </section>
       <section className="px-6 lg:px-12 xl:px-40">
-        <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
+        <section className="bg-gris_oscuro text-white mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
           <h3 className="text-3xl py-3 lg:py-5">Nuestros Boletines</h3>
           <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6">
             <Image

@@ -55,8 +55,8 @@ export default function Contacto() {
       <h1 className="hidden md:block py-6 lg:py-12">
         Llene el formulario de Contacto
       </h1>
-      <section className="md:flex w-full justify-between gap-4 px-5 md:px-10">
-        <section className="lg:w-1/3 bg-slate-100 border rounded-xl p-8 mb-10 md:mb-32 mt-6 md:mt-0">
+      <section className="md:flex w-full justify-between gap-4 px-5 md:px-10 text-white">
+        <section className="lg:w-1/3 bg-gris_oscuro border rounded-xl p-8 mb-10 md:mb-32 mt-6 md:mt-0">
           <h2 className="font-bold text-2xl md:text-3xl">
             Información de Contacto
           </h2>
@@ -64,7 +64,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3">
             <Image
               quality={60}
-              src="/icons/whatsappJet.png"
+              src="/icons/whatsappNaranja.png"
               alt="Kit"
               width={30}
               height={30}
@@ -74,7 +74,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3 mt-5">
             <Image
               quality={60}
-              src="/icons/emailJet.png"
+              src="/icons/email.png"
               alt="Kit"
               width={30}
               height={30}
@@ -88,7 +88,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3">
             <Image
               quality={60}
-              src="/icons/whatsappJet.png"
+              src="/icons/whatsappNaranja.png"
               alt="Kit"
               width={30}
               height={30}
@@ -98,7 +98,7 @@ export default function Contacto() {
           <div className="flex items-cenaseter space-x-3 mt-5">
             <Image
               quality={60}
-              src="/icons/emailJet.png"
+              src="/icons/email.png"
               alt="Kit"
               width={30}
               height={30}

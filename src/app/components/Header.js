@@ -28,15 +28,15 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
                 isVisible ? "/icons/arrowDownBlack.png" : "/icons/arrowDown.png"
               }
               alt="dropdown arrow"
-              width={isVisible ? 19 : 24}
-              height={isVisible ? 19 : 24}
+              width={isVisible ? 15 : 24}
+              height={isVisible ? 15 : 24}
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <Link href="/Delphi">
+            <Link href="/delphi">
               <DropdownMenuItem>Delphi</DropdownMenuItem>
             </Link>
-            <Link href="/Pastillas">
+            <Link href="/pastillas">
               <DropdownMenuItem>Pastillas de Freno</DropdownMenuItem>
             </Link>
           </DropdownMenuContent>
@@ -194,7 +194,7 @@ function Header() {
         </section>
         {isVisible && (
           <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium nav2:hidden px-6">
-            <ul className="flex flex-col justify-center gap-7 bg-[#F4F4F4] rounded-2xl py-7 px-7">
+            <ul className="flex flex-col justify-center gap-7 bg-gris_oscuro text-white rounded-2xl py-7 px-7">
               {menuItems.map((item, index) => (
                 <article
                   onClick={toggleMenu}

@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { Children } from "react";
 
 function CardProduct({ image, title, texto }) {
   return (
-    <article className="flex flex-col items-center border text-center rounded-[20px] w-full">
+    <article className="flex flex-col items-center shadow border-t text-center rounded-[20px] w-full">
       <Image
         quality={60}
         src={`/${image}`}

@@ -6,14 +6,14 @@ import BRAKEPADSBOX from "../../../public/CajaPastilla.png";
 
 const Marcas = () => {
   return (
-    <div className="bg-slate-100 px-3 md:px-6 lg:px-10 xl:px-20">
-      <h1 className="py-6 lg:py-12 text-black">Nuestros Productos</h1>
+    <div className="bg-gris_oscuro px-3 md:px-6 lg:px-10 xl:px-20">
+      <h1 className="py-6 lg:py-12 text-white">Nuestros Productos</h1>
       <div className="flex flex-wrap justify-center gap-4 md:gap-10">
         <BrandCard
           image={BRAKEPADSBOX}
           text={"Pastilla de Freno"}
           brand={"PLATINUM DRIVELINE"}
-          link={"Pastillas"}
+          link={"pastillas"}
           text_button={"Visitar"}
         />
         <BrandCard
@@ -27,7 +27,7 @@ const Marcas = () => {
           image={DELPHIBOX}
           text={"Suspensión"}
           brand={"DELPHI"}
-          link={"Delphi"}
+          link={"delphi"}
           text_button={"Visitar"}
         />
       </div>

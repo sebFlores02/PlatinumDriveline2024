@@ -38,11 +38,14 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       },
       colors: {
-        naranja: "#e98512",
-        gris_oscuro: "#303030",
-        gris_ligero: "#707070",
+        naranja: "#d87e2e",
+        // gris_oscuro: "#303030",
+        gris_oscuro: "#20314f",
+        // gris_ligero: "#707070",
+        gris_ligero: "#9aa2b7",
         azul_delphi: "#004aca",
-        azul_pastillas: "#222F54",
+        // azul_pastillas: "#222F54",
+        azul_pastillas: "#cf4339",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

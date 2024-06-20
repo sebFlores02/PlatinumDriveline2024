@@ -10,7 +10,7 @@ const CardDelphiProduct = ({ image, title }) => {
           alt="Kit"
           width={500}
           height={540}
-          className="rounded-2xl p-4 max-h-[300px] object-contain"
+          className="rounded-2xl max-h-[300px] object-contain"
         />
       </section>
       <p className="text-center font-medium py-7 px-4 lg:px-8 text-lg lg:text-2xl flex-grow">

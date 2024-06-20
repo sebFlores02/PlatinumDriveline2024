@@ -10,7 +10,7 @@ function Productos() {
       <section className="bg-[#F4F4F4] flex flex-col items-center text-center mt-6">
         <a href="/Productos/Kit">
           <h2 className="text-[35px] font-medium mt-9">Kits + CSC</h2>
-          <p className="text-[#5397DC] font-regular text-lg mt-4 hover:underline">
+          <p className="text-naranja font-regular text-lg mt-4 hover:underline">
             Mas información
           </p>
           <section className="flex flex-col md:flex-row items-center justify-center gap-12 mb-20 mt-8 px-8">
@@ -41,7 +41,7 @@ function Productos() {
         <article className="bg-[#F4F4F4] basis-1/2 flex flex-col items-center text-center py-2">
           <a href="/Productos/Plato">
             <h2 className="text-[35px] font-medium mt-9">Plato</h2>
-            <p className="text-[#5397DC] font-regular text-lg mt-1 mb-5 hover:underline">
+            <p className="text-naranja font-regular text-lg mt-1 mb-5 hover:underline">
               Mas información
             </p>
             <Image
@@ -58,7 +58,7 @@ function Productos() {
         <article className="bg-[#F4F4F4] basis-1/2 flex flex-col items-center text-center py-2">
           <a href="/Productos/Disco">
             <h2 className="text-[35px] font-medium mt-9">Disco</h2>
-            <p className="text-[#5397DC] font-regular text-lg mt-1 mb-5 hover:underline">
+            <p className="text-naranja font-regular text-lg mt-1 mb-5 hover:underline">
               Mas información
             </p>
             <Image
