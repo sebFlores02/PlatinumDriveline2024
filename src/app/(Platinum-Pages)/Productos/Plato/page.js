@@ -9,7 +9,7 @@ function page() {
         <section className="basis-2/5">
           <Image
             quality={100}
-            src="/VW03-2.png"
+            src="/images/componentes/VW03-2.png"
             alt="NS73-3"
             width={400}
             height={400}
@@ -50,7 +50,7 @@ function page() {
           <article className="py-10 px-16 flex flex-col items-center border border-gray-300 rounded-md">
             <Image
               quality={100}
-              src="/NS73-3.png"
+              src="/images/componentes/NS73-3.png"
               alt="NS73-3"
               width={200}
               height={200}
@@ -66,7 +66,7 @@ function page() {
           <article className="py-10 px-16 flex flex-col items-center justify-between border border-gray-300 rounded-md w-full h-full">
             <Image
               quality={100}
-              src="/images/KitCompletoPlatinum.png"
+              src="/images/componentes/KitCompletoPlatinum.png"
               alt="NS73-3"
               width={200}
               height={200}

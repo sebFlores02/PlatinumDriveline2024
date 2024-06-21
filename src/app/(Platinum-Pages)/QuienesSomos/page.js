@@ -19,7 +19,6 @@ function page() {
           /> */}
           {/* <video src="/Platinum.mp4" autoPlay loop /> */}
           <iframe
-            // width="560"
             height="315"
             src="https://www.youtube.com/embed/imRvb8pWkDQ"
             className="w-full"
@@ -68,8 +67,26 @@ function page() {
         </section>
       </section>
 
-      <h1 className="mt-20 mb-10">Mas Sobre Nosotros</h1>
-      <section className="flex flex-col lg:flex-row md:px-40 lg:px-0 gap-8 lg:gap-6 text-justify items-stretch leading-8 mb-28">
+      <h1 className="py-10 md:mt-14 md:mb-10">Mas Sobre Nosotros</h1>
+      <article className="flex flex-col items-center basis-1/3 bg-[#f4f4f4] border  rounded-lg px-8 mb-6 py-10">
+        <Image
+          quality={60}
+          src="/icons/service.png"
+          alt="opportunity"
+          width={90}
+          height={90}
+        />
+        <h3 className="text-center text-[30px] font-medium my-8">Servicio</h3>
+        <p className="flex-grow text-center leading-10">
+          Contamos con cobertura total en el territorio nacional, nuestro
+          personal está capacitado para ofrecer servicio personalizado y de tele
+          mercadeo. Nos distinguimos por generar alianzas con nuestros
+          distribuidores, tener excelentes niveles de inventario, adecuarnos a
+          las necesidades del cliente y asegurar la entrega de pedidos con
+          prontitud.
+        </p>
+      </article>
+      <section className="flex flex-col lg:flex-row lg:px-0 gap-8 lg:gap-6 text-justify items-stretch leading-8 mb-14">
         <article className="flex flex-col items-center basis-1/3 bg-[#f4f4f4] border  rounded-lg px-8 py-10">
           <Image
             quality={60}
@@ -107,15 +124,16 @@ function page() {
         <article className="flex flex-col items-center basis-1/3 bg-[#f4f4f4] border  rounded-lg px-8 py-10">
           <Image
             quality={60}
-            src="/icons/opportunity.png"
+            src="/icons/vision.png"
             alt="opportunity"
             width={90}
             height={90}
           />
           <h3 className="text-center text-[30px] font-medium my-8">Visión</h3>
           <p className="flex-grow text-center leading-10">
-            Que el comprar nuestros productos sea una experiencia de calidad
-            para el cliente y su automóvil. Posicionarnos como una marca líder.
+            Que el comprar productos de marca Platinum sea una experiencia de
+            calidad para el cliente y su automóvil y posicionarnos como un
+            proveedor de marca líder y confiable.
           </p>
         </article>
       </section>

@@ -12,9 +12,7 @@ function page() {
   return (
     <main>
       <Header />
-
       <Carousel />
-
       <Marcas />
 
       <h1 className="py-6 lg:py-12">Nuevas Integraciones</h1>

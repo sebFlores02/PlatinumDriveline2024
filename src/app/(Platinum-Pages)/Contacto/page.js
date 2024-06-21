@@ -55,8 +55,8 @@ export default function Contacto() {
       <h1 className="hidden md:block py-6 lg:py-12">
         Llene el formulario de Contacto
       </h1>
-      <section className="md:flex w-full justify-between gap-4 px-5 md:px-10 text-white">
-        <section className="lg:w-1/3 bg-gris_oscuro border rounded-xl p-8 mb-10 md:mb-32 mt-6 md:mt-0">
+      <section className="md:flex w-full justify-between gap-4 px-5 md:px-10">
+        <section className="lg:w-1/3 bg-gris_oscuro border rounded-xl p-8 mb-10 md:mb-32 mt-6 md:mt-0 text-white">
           <h2 className="font-bold text-2xl md:text-3xl">
             Información de Contacto
           </h2>
@@ -74,7 +74,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3 mt-5">
             <Image
               quality={60}
-              src="/icons/email.png"
+              src="/icons/emailNaranja.png"
               alt="Kit"
               width={30}
               height={30}
@@ -98,7 +98,7 @@ export default function Contacto() {
           <div className="flex items-cenaseter space-x-3 mt-5">
             <Image
               quality={60}
-              src="/icons/email.png"
+              src="/icons/emailNaranja.png"
               alt="Kit"
               width={30}
               height={30}
@@ -118,7 +118,7 @@ export default function Contacto() {
             <p className="font-base text-base">Santiago de Querétaro</p>
           </div>
         </section>
-        <h2 className="md:hidden text-center font-medium text-3xl py-0 pb-8 px-4 lg:py-8">
+        <h2 className="md:hidden text-center font-medium text-3xl py-0 pb-8 px-4 lg:py-8 text-black">
           Llene el formulario de Contacto
         </h2>
         {/* padding-bottom: 20px; padding-inline: 20px; font-weight: 300;
@@ -139,7 +139,10 @@ export default function Contacto() {
             </section>
           )}
           <fieldset className="flex flex-col ">
-            <label htmlFor="firstName" className="font-semibold uppercase">
+            <label
+              htmlFor="firstName"
+              className="font-semibold uppercase text-black"
+            >
               Nombre
             </label>
             <input
@@ -153,7 +156,10 @@ export default function Contacto() {
               required
             />
 
-            <label htmlFor="email" className="font-semibold uppercase">
+            <label
+              htmlFor="email"
+              className="font-semibold uppercase text-black"
+            >
               E-mail
             </label>
             <input
@@ -167,7 +173,10 @@ export default function Contacto() {
               required
             />
 
-            <label htmlFor="telefono" className="font-semibold uppercase">
+            <label
+              htmlFor="telefono"
+              className="font-semibold uppercase text-black"
+            >
               Teléfono
             </label>
             <input
@@ -181,7 +190,10 @@ export default function Contacto() {
               required
             />
 
-            <label htmlFor="mensaje" className="font-semibold uppercase">
+            <label
+              htmlFor="mensaje"
+              className="font-semibold uppercase text-black"
+            >
               Mensaje:
             </label>
             <textarea

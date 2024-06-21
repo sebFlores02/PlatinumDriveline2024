@@ -16,7 +16,7 @@ function Productos() {
           <section className="flex flex-col md:flex-row items-center justify-center gap-12 mb-20 mt-8 px-8">
             <Image
               quality={`${quality}`}
-              src="/images/FD05-1.png"
+              src="/images/componentes/FD05-1.png"
               alt="Kit"
               width={450}
               height={450}
@@ -24,7 +24,7 @@ function Productos() {
             <article className="flex justify-center">
               <Image
                 quality={`${quality}`}
-                src="/images/SFC511PL.png"
+                src="/images/componentes/SFC511PL.png"
                 alt="Boletin #1"
                 width={350}
                 height={350}
@@ -46,7 +46,7 @@ function Productos() {
             </p>
             <Image
               quality={`${quality}`}
-              src="/VW03-2.png"
+              src="/images/componentes/VW03-2.png"
               alt="Boletin #1"
               width={360}
               height={300}
@@ -63,7 +63,7 @@ function Productos() {
             </p>
             <Image
               quality={`${quality}`}
-              src="/NS73-3.png"
+              src="/images/componentes/NS73-3.png"
               alt="Kit NS73-3"
               width={360}
               height={300}

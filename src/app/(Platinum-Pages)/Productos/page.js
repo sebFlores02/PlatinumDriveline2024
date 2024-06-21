@@ -12,7 +12,7 @@ function page() {
         <article className="basis-[50%] text-justify flex flex-col items-center leading-9">
           <Image
             quality={`${quality}`}
-            src="/CajaPlatinum.png"
+            src="/images/cajas/Clutch.png"
             alt="Boletin #1"
             width={360}
             height={300}

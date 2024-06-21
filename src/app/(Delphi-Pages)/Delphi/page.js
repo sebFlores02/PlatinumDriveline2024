@@ -20,7 +20,7 @@ function page() {
         </a>
         <Image
           quality={60}
-          src="/Delphi_logo.png"
+          src="/delphi/Delphi_logo.png"
           alt="Kit"
           width={200}
           height={200}
@@ -30,7 +30,7 @@ function page() {
           <section className="bg-[#e5e2e2] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">
             <Image
               quality={60}
-              src="/CajaDelphi.png"
+              src="/images/cajas/CajaDelphi.png"
               alt="Kit"
               width={400}
               height={400}
@@ -78,12 +78,12 @@ function page() {
           <h3 className="text-3xl py-3 lg:py-5">Nuestros Boletines</h3>
           <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6">
             <BoletinCard
-              img={"BoletinDelphi1.jpg"}
+              img={"delphi/BoletinDelphi1.jpg"}
               title={"Diagnóstico de fallos"}
               href={"BoletinDelphi1.jpg"}
             />
             <BoletinCard
-              img={"BoletinDelphi2.jpg"}
+              img={"delphi/BoletinDelphi2.jpg"}
               title={"Módulos De Combustible"}
               href={"/download/BoletinDelphi2.pdf"}
             />

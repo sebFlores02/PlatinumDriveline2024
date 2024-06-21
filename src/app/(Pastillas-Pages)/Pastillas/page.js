@@ -27,7 +27,7 @@ function page() {
           <section className="bg-[#e5e2e2] rounded-t-2xl md:rounded-r-none md:rounded-l-2xl basis-2/6 flex flex-col items-center justify-center">
             <Image
               quality={60}
-              src="/CajaPastilla.png"
+              src="/images/cajas/CajaPastilla.png"
               alt="Kit"
               width={400}
               height={400}
