@@ -19,7 +19,7 @@ function page() {
 
       <section className="grid grid-cols-1 sm:grid-cols-2 nav:grid-cols-3 gap-5 px-6 sm:px-5 xl:px-24 2xl:px-40">
         <CardProduct
-          image={"images/aplicaciones/TY07.jpg"}
+          image={"TY07.png"}
           title={"TY07-275HCE-01"}
           texto={[
             "Toyota Hiace",
@@ -29,7 +29,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"images/aplicaciones/MB00-03.png"}
+          image={"MB00-03.png"}
           title={"MB00-240SPR-03"}
           texto={[
             "MERCEDES BENZ Sprinter",
@@ -39,7 +39,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"images/aplicaciones/HON03.png"}
+          image={"HON03.png"}
           title={"HON03-200FIT-01"}
           texto={[
             "FIT L4 1.5 LTS. DOHC 130HP. 15-20",
@@ -49,7 +49,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"FD105-03.jpeg"}
+          image={"HIN04.png"}
           title={"HIN04-300414-01"}
           texto={[
             "414 - 614",
@@ -59,7 +59,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"images/aplicaciones/MB04.png"}
+          image={"MB04.png"}
           title={"MB04-430OM460-01"}
           texto={[
             "MULTEGO OC 500",
@@ -69,7 +69,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"images/aplicaciones/MB05.png"}
+          image={"MB05.png"}
           title={"MB05-BUS457-01"}
           texto={[
             "AUTOBUS MB 447-457",

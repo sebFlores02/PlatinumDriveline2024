@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
   if (text === "Otros Productos") {
@@ -24,12 +24,10 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
             {text}
             <Image
               quality={60}
-              src={
-                isVisible ? "/icons/arrowDownBlack.png" : "/icons/arrowDown.png"
-              }
+              src="/icons/arrowDown.png"
               alt="dropdown arrow"
-              width={isVisible ? 15 : 24}
-              height={isVisible ? 15 : 24}
+              width={24}
+              height={24}
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
@@ -68,13 +66,17 @@ const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
 
 function Header() {
   const menuItems = [
-    { href: "/", text: "Inicio", icon: "next.png" },
-    { href: "/QuienesSomos", text: "¿Quiénes Somos?", icon: "next.png" },
-    { href: "/Productos", text: "Componentes Embrague", icon: "next.png" },
+    { href: "/", text: "Inicio", icon: "arrowWhite.png" },
+    { href: "/QuienesSomos", text: "¿Quiénes Somos?", icon: "arrowWhite.png" },
+    {
+      href: "/Productos",
+      text: "Componentes Embrague",
+      icon: "arrowWhite.png",
+    },
     { text: "Otros Productos", icon: "next.png" },
-    { href: "/Boletines", text: "Boletines", icon: "next.png" },
-    { href: "/Galeria", text: "Galería", icon: "next.png" },
-    { href: "/Contacto", text: "Contacto", icon: "next.png" },
+    { href: "/Boletines", text: "Boletines", icon: "arrowWhite.png" },
+    { href: "/Galeria", text: "Galería", icon: "arrowWhite.png" },
+    { href: "/Contacto", text: "Contacto", icon: "arrowWhite.png" },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
@@ -83,6 +85,14 @@ function Header() {
   const toggleMenu = () => {
     setIsVisible(!isVisible);
   };
+
+  useEffect(() => {
+    if (isVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isVisible]);
 
   return (
     <main>
@@ -149,7 +159,7 @@ function Header() {
       <nav
         className={`${
           isVisible
-            ? "fixed inset-0 overflow-y-auto w-full flex flex-col z-10"
+            ? "fixed inset-0 overflow-y-auto w-full flex flex-col z-50"
             : ""
         }`}
       >
@@ -177,7 +187,7 @@ function Header() {
             alt="burger menu"
             width={25}
             height={25}
-            className="float-end nav2:hidden"
+            className="float-end nav2:hidden cursor-pointer"
           />
           <ul className="hidden nav2:flex gap-10 text-white justify-end w-[80%] items-center">
             {menuItems.map((item) => (
@@ -193,7 +203,7 @@ function Header() {
           </ul>
         </section>
         {isVisible && (
-          <section className="bg-white flex flex-col justify-between pt-6 text-black font-medium nav2:hidden px-6">
+          <section className="bg-white flex flex-col justify-between pt-8 text-black font-medium nav2:hidden px-6 h-full">
             <ul className="flex flex-col justify-center gap-7 bg-gris_oscuro text-white rounded-2xl py-7 px-7">
               {menuItems.map((item, index) => (
                 <article

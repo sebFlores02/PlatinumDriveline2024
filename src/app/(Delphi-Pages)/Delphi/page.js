@@ -74,7 +74,7 @@ function page() {
             volantes={true}
           />
         </section>
-        <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
+        <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl shadow">
           <h3 className="text-3xl py-3 lg:py-5">Nuestros Boletines</h3>
           <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6">
             <BoletinCard
@@ -94,7 +94,7 @@ function page() {
         <h1 className="text-center py-16 text-white text-[32px] font-medium">
           Suspensión
         </h1>
-        <article className="flex flex-col-reverse md:flex-row bg-white rounded-2xl rounded-t-2xl">
+        <article className="flex flex-col-reverse md:flex-row bg-white rounded-2xl rounded-t-2xl shadow">
           <section className="basis-4/6 flex flex-col justify-center text-justify p-6 lg:p-16 leading-10">
             <p>
               Como parte integral de su conducción, manejo y seguridad, el
@@ -110,7 +110,7 @@ function page() {
               rentable.
             </p>
           </section>
-          <section className="bg-[#e5e2e2] rounded-r-2xl rounded-b-none rounded-t-2xl md:rounded-r-2xl md:rounded-l-none basis-2/6 flex flex-col items-center justify-center">
+          <section className="bg-[#e5e2e2] rounded-b-none rounded-t-2xl md:rounded-r-2xl md:rounded-l-none basis-2/6 flex flex-col items-center justify-center">
             <Image
               quality={60}
               src="/grupalSuspension.png"

@@ -1,3 +1,5 @@
+import BoletinCardDelphi from "@/app/components/BoletinCardDelphi";
+import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import CardDownload from "../../components/ContentConsumingCard";
 
@@ -65,7 +67,7 @@ function page() {
           Mas Información
         </h1>
         <section className="md:flex gap-5 pb-20">
-          <article className="bg-white rounded-2xl rounded-t-2xl p-7 w-full lg:w-3/5 mb-8 md:mb-0">
+          <article className="bg-white rounded-2xl rounded-t-2xl p-7 w-full lg:w-1/2 mb-8 md:mb-0">
             <h3 className="font-bold text-2xl mb-5">Características:</h3>
             <ul className="list-disc space-y-5 px-4 text-justify">
               <li>
@@ -89,19 +91,36 @@ function page() {
               </li>
             </ul>
           </article>
-          <article className="bg-white rounded-2xl rounded-t-2xl p-8 w-full lg:w-2/5">
+          <article className="bg-white rounded-2xl rounded-t-2xl p-8 w-full lg:w-1/2">
             <h3 className="font-bold text-2xl mb-3">Garantía:</h3>
-            <h4 className="font-bold mb-4">
-              Garantia de 6 meses o 10,000 km, lo que ocurra primero
-            </h4>
-            <p className="leading-10 text-justify">
-              La garantía de ruido y frenado no tiene vigencia, ya que siempre
-              deben hacerlo, hasta los 3mm de espesor mínimo que es cuando ya se
-              deben reemplazar las pastillas para que la garantía de desgaste
-              proceda, se debe tener un desgaste regular en las 4 pastillas,
-              digamos parejo, ya que lo común es que se presente solo en 1
-              pastilla (que se quedó pegada) o las de un eje, o desgaste en
-              forma de cuña, que esto también no aplica.
+            <p className="text-justify leading-8">
+              Garantia de 6 meses o 10,000 km , lo que ocurra primero,
+              unicamente por defectos de material o fabricacion. No incluye
+              gastos de desmontaje ni mano de obra.
+            </p>
+            <p className="my-3 font-bold">
+              La garantia no se hara efectiva en los siguientes casos:
+            </p>
+            <ul className="list-disc ml-6 leading-8">
+              <li>Hayan sido instaladas incorrectamente.</li>
+              <li>
+                Muestren daños originados por motivos ajenos a su
+                funcionamiento.
+              </li>
+              <li>
+                Tengan alguna modificación o alteración en su diseño original.
+              </li>
+              <li>Presenten signos visibles de abuso en su utilización.</li>
+              <li>
+                Se instalen en vehículos para los cuales no fueron diseñadas o
+                en aquellos que hayan sido modificados de su diseño original.
+              </li>
+            </ul>
+            <p className="mt-3 leading-8">
+              Para que la garantía de desgaste proceda, se debe tener un
+              desgaste regular en las 4 pastillas, parejo, ya que lo común es
+              que se presente solo en 1 pastilla, que se quede pegada, o las de
+              un eje, o desgaste en forma de cuña, tampoco aplicable.
             </p>
           </article>
         </section>
@@ -109,17 +128,30 @@ function page() {
       <section className="px-6 lg:px-12 xl:px-40">
         <section className="bg-gris_oscuro text-white mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl">
           <h3 className="text-3xl py-3 lg:py-5">Nuestros Boletines</h3>
-          <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6">
-            <Image
-              quality={60}
-              src="/gifs/proximamente.gif"
-              alt="Kit"
-              width={400}
-              height={400}
-            />
+          <section className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mt-3 lg:mt-6 px-4 pb-4">
+            <a
+              href="/download/boletinInstalacion.jpg"
+              download
+              className="bg-white rounded-xl flex flex-col items-center"
+            >
+              <section className="flex-shrink-0">
+                <Image
+                  quality={50}
+                  src="/download/boletinInstalacion.jpg"
+                  alt="Kit"
+                  width={550}
+                  height={400}
+                  className="w-full h-full rounded-t-xl object-contain border-b-2 sm:max-w-[400px]"
+                />
+              </section>
+              <h5 className="p-4 lg:p-6 text-center flex-grow flex flex-col justify-center text-black">
+                Recomendaciones de Instalación
+              </h5>
+            </a>
           </section>
         </section>
       </section>
+      <Footer />
     </main>
   );
 }

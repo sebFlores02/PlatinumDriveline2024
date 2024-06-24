@@ -5,12 +5,14 @@ import React from "react";
 const BrandCard = ({ image, text, brand, link, text_button }) => {
   const getColor = () => {
     switch (text) {
+      case "Suspensión":
+        return "azul_delphi";
       case "Pastilla de Freno":
         return "azul_pastillas";
       case "Componente Embrague":
         return "naranja";
-      case "Suspensión":
-        return "azul_delphi";
+      default:
+        "";
     }
   };
   const getColorHover = () => {
@@ -21,6 +23,8 @@ const BrandCard = ({ image, text, brand, link, text_button }) => {
         return "bg-orange-400";
       case "Suspensión":
         return "bg-blue-500";
+      default:
+        "";
     }
   };
 

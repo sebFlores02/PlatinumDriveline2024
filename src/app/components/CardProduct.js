@@ -5,7 +5,7 @@ function CardProduct({ image, title, texto }) {
     <article className="flex flex-col items-center shadow border-t text-center rounded-[20px] w-full">
       <Image
         quality={60}
-        src={`/${image}`}
+        src={`/images/aplicaciones/${image}`}
         alt="Kit"
         width={300}
         height={300}
