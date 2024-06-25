@@ -5,22 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavItem from "./NavItem";
+import { menuItems } from "@/data/menuData";
 
 function Header() {
-  const menuItems = [
-    { href: "/", text: "Inicio", icon: "arrowWhite.png" },
-    { href: "/QuienesSomos", text: "¿Quiénes Somos?", icon: "arrowWhite.png" },
-    {
-      href: "/Productos",
-      text: "Componentes Embrague",
-      icon: "arrowWhite.png",
-    },
-    { text: "Otros Productos", icon: "next.png" },
-    { href: "/Boletines", text: "Boletines", icon: "arrowWhite.png" },
-    { href: "/Galeria", text: "Galería", icon: "arrowWhite.png" },
-    { href: "/Contacto", text: "Contacto", icon: "arrowWhite.png" },
-  ];
-
   const [isVisible, setIsVisible] = useState(false);
   const pathname = usePathname();
 

@@ -8,7 +8,7 @@ const Marcas = () => {
   return (
     <div className="bg-gris_oscuro px-3 md:px-6 lg:px-10 xl:px-20">
       <h1 className="py-6 lg:py-12 text-white">Nuestros Productos</h1>
-      <div className="flex flex-wrap justify-center gap-4 md:gap-10 pb-14 xl:pb-0">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-10 pb-14 2xl:pb-0">
         <BrandCard
           image={BRAKEPADSBOX}
           text={"Pastilla de Freno"}
