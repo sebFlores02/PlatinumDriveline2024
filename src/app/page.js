@@ -112,7 +112,7 @@ function page() {
               "Explora el catálogo de productos diesel de Platinum Driveline. Nuestra selección incluye componentes robustos y fiables, ideales para vehículos diesel."
             }
             type={"download"}
-            href={""}
+            href={"/download/CatalogHD.pdf"}
           />
           <CardDownload
             page={"platinum"}

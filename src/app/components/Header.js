@@ -68,18 +68,18 @@ function Header() {
             </Link>
             <Link
               href="https://drive.google.com/file/d/1VALiPiPlFG4SzS6s9B8Z4U9d5ZjGhgHf/view?usp=sharing"
-              download
+              target="_blank"
             >
               <article className="flex items-center px-5 gap-3 rounded-xl bg-white py-2 hover:bg-slate-200">
                 <Image
                   quality={60}
-                  src="/icons/downloadBlack.png"
+                  src="/icons/webBlack.png"
                   alt="email"
                   width={23}
                   height={23}
                 />
                 <p className="font-medium text-gris_oscuro hover:underline">
-                  Descarga el Catálogo Ligero
+                  Visita el Catálogo Ligero
                 </p>
               </article>
             </Link>
