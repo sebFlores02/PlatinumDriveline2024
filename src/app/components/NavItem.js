@@ -42,11 +42,11 @@ const NavItem = ({ href = "", text, icon, isActive }) => {
 
   return (
     <li
-      className={`gap-3 text-base font-light text-center ${
+      className={`gap-3 text-base font-light text-center w-full ${
         isActive ? "border-b-2 border-naranja" : ""
       }`}
     >
-      <Link className="flex flex-row justify-between" href={href}>
+      <Link className="flex flex-row" href={href}>
         {text}
         <Image
           quality={60}
