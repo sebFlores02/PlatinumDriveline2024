@@ -42,7 +42,7 @@ const NavItem = ({ href = "", text, icon, isActive }) => {
 
   return (
     <li
-      className={`gap-3 text-base font-light text-center w-full ${
+      className={`gap-3 text-base font-light text-center ${
         isActive ? "border-b-2 border-naranja" : ""
       }`}
     >
