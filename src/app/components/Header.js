@@ -1,68 +1,10 @@
 "use client";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-
-const NavItem = ({ href = "", text, icon, isActive, isVisible = true }) => {
-  if (text === "Otros Productos") {
-    return (
-      <li
-        className={`gap-3 text-base font-light text-center flex ${
-          isActive ? "border-b-2 border-naranja" : ""
-        }`}
-      >
-        <DropdownMenu>
-          <DropdownMenuTrigger className="flex flex-row gap-4 justify-between items-center">
-            {text}
-            <Image
-              quality={60}
-              src="/icons/arrowDown.png"
-              alt="dropdown arrow"
-              width={24}
-              height={24}
-            />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <Link href="/delphi">
-              <DropdownMenuItem>Delphi</DropdownMenuItem>
-            </Link>
-            <Link href="/pastillas">
-              <DropdownMenuItem>Pastillas de Freno</DropdownMenuItem>
-            </Link>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </li>
-    );
-  }
-
-  return (
-    <li
-      className={`gap-3 text-base font-light text-center ${
-        isActive ? "border-b-2 border-naranja" : ""
-      }`}
-    >
-      <Link className="flex flex-row justify-between" href={href}>
-        {text}
-        <Image
-          quality={60}
-          src={isActive ? `/icons/active-${icon}` : `/icons/${icon}`}
-          alt="menu icon"
-          width={24}
-          height={24}
-          className="float-end nav2:hidden ml-3"
-        />
-      </Link>
-    </li>
-  );
-};
+import NavItem from "./NavItem";
 
 function Header() {
   const menuItems = [
@@ -197,13 +139,12 @@ function Header() {
                 text={item.text}
                 icon={item.icon}
                 isActive={pathname === item.href}
-                isVisible={isVisible}
               />
             ))}
           </ul>
         </section>
         {isVisible && (
-          <section className="bg-white flex flex-col justify-between pt-8 text-black font-medium nav2:hidden px-6 h-full">
+          <section className="bg-white flex flex-col justify-between pt-8 text-black font-medium nav2:hidden px-6 min-h-screen">
             <ul className="flex flex-col justify-center gap-7 bg-gris_oscuro text-white rounded-2xl py-7 px-7">
               {menuItems.map((item, index) => (
                 <article
