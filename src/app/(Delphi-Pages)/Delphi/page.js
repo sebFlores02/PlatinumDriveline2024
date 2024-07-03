@@ -68,10 +68,12 @@ function page() {
             content={
               "Descarga el catálogo en PDF de Delphi. Tendrás acceso a información detallada sobre nuestros componentes de suspensión y sus aplicaciones."
             }
-            type={"download"}
-            href={"/download/Cedula-1.pdf"}
+            type={"web"}
+            href={
+              "https://drive.google.com/file/d/1q3K06KduQvUsljDvnKO1D5Sb65jgpq5C/view?usp=sharing"
+            }
             page={"delphi"}
-            volantes={true}
+            volantes={false}
           />
         </section>
         <section className="bg-[#F4F4F4] mt-10 mb-10 lg:mb-20 p-4 md:p-10 text-center rounded-2xl shadow">

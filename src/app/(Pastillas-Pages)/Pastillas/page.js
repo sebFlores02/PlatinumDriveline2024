@@ -36,14 +36,13 @@ function page() {
             />
           </section>
           <p className="basis-4/6 text-justify p-8 lg:p-16 leading-10 flex flex-col items-center justify-center">
-            With a presence in more than 150 countries, and a global network of
-            over 2,750 service centers, Delphi provides OE specification
-            end-to-end solutions. With a wide-ranging portfolio including
-            gasoline fuel systems, diesel fuel systems, maintenance solutions,
-            engine management and vehicle electronics, backed by OE-level
-            diagnostic and test equipment, training and technical information,
-            Delphi enables garages to service and repair vehicles right the
-            first time.
+            <span className="text-left mr-auto font-bold">
+              Platinum Premium brake pads
+            </span>
+            Pastillas de freno integral moldeadas de última tecnología, con
+            shims, accesorios y homologación con primer equipo. Material de
+            fricción seleccionado para satisfacer las demandas de los vehículos
+            modernos con ABS y sistemas de frenado automatizado.
           </p>
         </article>
       </section>
@@ -57,8 +56,8 @@ function page() {
               "Explora el catálogo de pastillas de freno de Platinum Driveline. Conoce nuestra línea de productos desarrollados para garantizar una frenada eficiente y segura."
             }
             type={"download"}
-            href={""}
-            volantes={true}
+            href={"/download/BrakesLista.pdf"}
+            volantes={false}
           />
         </section>
       </section>

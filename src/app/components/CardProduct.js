@@ -17,7 +17,11 @@ function CardProduct({ image, title, texto }) {
         </h2>
         <ul className="leading-8 mb-6">
           {texto.map((text) => {
-            return <li className="px-4">{text}</li>;
+            return (
+              <li key={text} className="px-4">
+                {text}
+              </li>
+            );
           })}
         </ul>
       </section>

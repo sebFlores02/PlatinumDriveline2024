@@ -13,8 +13,8 @@ export const menuItems = [
 ];
 
 export const menuItemsFooter = [
-  { href: "/", text: "Platinum Driveline", icon: "arrowWhite.png" },
-  { href: "/delphi", text: "Delphi", icon: "arrowWhite.png" },
-  { href: "/pastillas", text: "Pastillas de Freno", icon: "arrowWhite.png" },
-  { href: "/Contacto", text: "Contacto", icon: "arrowWhite.png" },
+  { href: "/", text: "Platinum Driveline", icon: "arrowWhite" },
+  { href: "/delphi", text: "Delphi", icon: "arrowWhite" },
+  { href: "/pastillas", text: "Pastillas de Freno", icon: "arrowWhite" },
+  { href: "/Contacto", text: "Contacto", icon: "arrowWhite" },
 ];

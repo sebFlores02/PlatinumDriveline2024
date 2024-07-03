@@ -16,7 +16,7 @@ function page() {
             alt="Boletin #1"
             width={360}
             height={300}
-            className="max-w-[260px] h-[200px] mb-12 size-full"
+            className="max-w-[360px] h-[240px] mb-12 size-full"
           />
           <h3 className="font-medium text-[24px] mb-7">
             Introducción del Programa
@@ -46,7 +46,7 @@ function page() {
             alt="Boletin #1"
             width={360}
             height={300}
-            className="max-w-[260px] h-[200px] mb-12 size-full"
+            className="max-w-[320px] h-[240px] mb-12 size-full"
           />
           <h3 className="font-medium text-[24px] mb-7">Pruebas</h3>
           <p>

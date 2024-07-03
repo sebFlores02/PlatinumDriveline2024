@@ -40,7 +40,7 @@ function Header() {
               height={34}
             />
           </Link>
-          <Link href="mailto:seb.flores2002@gmail.com">
+          <Link href="mailto:ventas@platinumdriveline.mx">
             <Image
               quality={60}
               src="/icons/emailWhite.png"
@@ -106,7 +106,7 @@ function Header() {
                 alt="Kit"
                 width={200}
                 height={200}
-                className="min-w-[200px]"
+                className="min-w-[200px] h-auto"
               />
             </Link>
           </section>
@@ -122,7 +122,7 @@ function Header() {
           <ul className="hidden nav2:flex gap-10 text-white justify-end w-[80%] items-center">
             {menuItems.map((item) => (
               <NavItem
-                key={item.href}
+                key={item.text}
                 href={item.href}
                 text={item.text}
                 icon={item.icon}

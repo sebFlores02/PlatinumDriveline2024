@@ -30,7 +30,7 @@ export default function App() {
         className="mySwiper"
       >
         {images.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={image}>
             <img
               quality={60}
               src={`/images/carrousel/${image}`}

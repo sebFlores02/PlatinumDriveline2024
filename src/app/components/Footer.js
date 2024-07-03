@@ -13,7 +13,6 @@ function Footer() {
             alt="NS73-3"
             width={200}
             height={200}
-            className=""
           />
         </div>
 
@@ -49,7 +48,7 @@ function Footer() {
                     <p>{item.text}</p>
                     <Image
                       quality={60}
-                      src="/icons/arrowWhite.png"
+                      src={`/icons/${item.icon}.png`}
                       alt="menu icon"
                       width={18}
                       height={18}
