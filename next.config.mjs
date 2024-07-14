@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  images: {
-    domains: ["platinumdriveline.mx"],
-  },
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
