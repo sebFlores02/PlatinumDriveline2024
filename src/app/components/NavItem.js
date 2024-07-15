@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,12 +27,16 @@ const NavItem = ({ href = "", text, icon, isActive }) => {
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <Link href="/delphi">
-              <DropdownMenuItem>Delphi</DropdownMenuItem>
-            </Link>
-            <Link href="/pastillas">
-              <DropdownMenuItem>Pastillas de Freno</DropdownMenuItem>
-            </Link>
+            <DropdownMenuItem asChild>
+              <Link href="/delphi" passHref>
+                Delphi
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/pastillas" passHref>
+                Pastillas de Freno
+              </Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </li>
@@ -46,7 +49,7 @@ const NavItem = ({ href = "", text, icon, isActive }) => {
         isActive ? "border-b-2 border-naranja" : ""
       }`}
     >
-      <Link className="flex flex-row" href={href}>
+      <Link href={href} passHref className="flex flex-row items-center gap-3">
         {text}
         <Image
           quality={60}

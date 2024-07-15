@@ -10,18 +10,18 @@ const Marcas = () => {
       <h1 className="py-6 lg:py-12 text-white">Nuestros Productos</h1>
       <div className="flex flex-wrap justify-center gap-4 md:gap-10 pb-14 2xl:pb-0">
         <BrandCard
+          image={PLATINUMBOX}
+          text={"Sistema de Embrague"}
+          brand={"PLATINUM DRIVELINE"}
+          link={"Productos"}
+          text_button={"Conoce Más"}
+        />
+        <BrandCard
           image={BRAKEPADSBOX}
           text={"Pastilla de Freno"}
           brand={"PLATINUM DRIVELINE"}
           link={"pastillas"}
           text_button={"Visitar"}
-        />
-        <BrandCard
-          image={PLATINUMBOX}
-          text={"Componente Embrague"}
-          brand={"PLATINUM DRIVELINE"}
-          link={"Productos"}
-          text_button={"Conoce Más"}
         />
         <BrandCard
           image={DELPHIBOX}

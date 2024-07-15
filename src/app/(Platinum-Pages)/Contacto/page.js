@@ -64,7 +64,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3">
             <Image
               quality={60}
-              src="/icons/whatsappNaranja.png"
+              src="/icons/whatsappnaranja.png"
               alt="Kit"
               width={30}
               height={30}
@@ -88,7 +88,7 @@ export default function Contacto() {
           <div className="flex items-center space-x-3">
             <Image
               quality={60}
-              src="/icons/whatsappNaranja.png"
+              src="/icons/whatsappnaranja.png"
               alt="Kit"
               width={30}
               height={30}

@@ -28,7 +28,6 @@ function Productos() {
                 alt="Boletin #1"
                 width={350}
                 height={350}
-                className="w-[70%]"
               />
             </article>
           </section>

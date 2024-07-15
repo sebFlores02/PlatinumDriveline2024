@@ -20,8 +20,8 @@ function page() {
         </a>
         <Image
           quality={60}
-          src="/delphi/Delphi_logo.png"
-          alt="Kit"
+          src="/LOGODelphi.png"
+          alt="Logo Delphi"
           width={200}
           height={200}
           className="mt-8"
@@ -115,7 +115,7 @@ function page() {
           <section className="bg-[#e5e2e2] rounded-b-none rounded-t-2xl md:rounded-r-2xl md:rounded-l-none basis-2/6 flex flex-col items-center justify-center">
             <Image
               quality={60}
-              src="/grupalSuspension.png"
+              src="/delphi/grupalSuspension.png"
               alt="Kit"
               width={400}
               height={400}

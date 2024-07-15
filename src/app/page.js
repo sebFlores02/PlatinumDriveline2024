@@ -69,7 +69,7 @@ function page() {
           ]}
         />
         <CardProduct
-          image={"MB05.png"}
+          image={"MB05.jpg"}
           title={"MB05-BUS457-01"}
           texto={[
             "AUTOBUS MB 447-457",

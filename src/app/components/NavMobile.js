@@ -47,7 +47,7 @@ const NavMobile = ({ toggleMenu }) => {
           </a>
           <a href="https://wa.me/4423455370" target="_blank">
             <Image
-              src="/icons/whatsappNaranja.png"
+              src="/icons/whatsappnaranja.png"
               width={24}
               height={24}
               alt="whatsapp"

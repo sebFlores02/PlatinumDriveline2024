@@ -9,7 +9,7 @@ const BrandCard = ({ image, text, brand, link, text_button }) => {
         return "azul_delphi";
       case "Pastilla de Freno":
         return "azul_pastillas";
-      case "Componente Embrague":
+      case "Sistema de Embrague":
         return "naranja";
       default:
         "";
