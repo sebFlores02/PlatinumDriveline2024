@@ -70,7 +70,7 @@ function page() {
             }
             type={"web"}
             href={
-              "https://drive.google.com/file/d/1q3K06KduQvUsljDvnKO1D5Sb65jgpq5C/view?usp=sharing"
+              "https://drive.google.com/file/d/1iG1frUd0cIGODVk8fQUhOvi4NEwxWLKH/view?usp=sharing"
             }
             page={"delphi"}
             volantes={false}

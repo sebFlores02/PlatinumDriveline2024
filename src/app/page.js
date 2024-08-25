@@ -114,16 +114,6 @@ function page() {
             type={"download"}
             href={"/download/CatalogHD.pdf"}
           />
-          <CardDownload
-            page={"platinum"}
-            title={"Catálogo Volantes"}
-            content={
-              " Descubre nuestra nueva línea de volantes de alta precisión. Mantente atento para obtener los mejores componentes de volante que mejoran el control y la seguridad en cada conducción."
-            }
-            type={"download"}
-            href={""}
-            volantes={true}
-          />
         </section>
       </section>
 
