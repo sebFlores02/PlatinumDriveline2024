@@ -56,7 +56,7 @@ function page() {
               "Explora el catálogo de pastillas de freno de Platinum Driveline. Conoce nuestra línea de productos desarrollados para garantizar una frenada eficiente y segura."
             }
             type={"download"}
-            href={"/download/BrakesLista.pdf"}
+            href={"/download/CATALOGO_Frenos_2024.pdf"}
             volantes={false}
           />
         </section>

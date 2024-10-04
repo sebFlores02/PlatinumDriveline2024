@@ -114,6 +114,15 @@ function page() {
             type={"download"}
             href={"/download/CatalogHD.pdf"}
           />
+          <CardDownload
+            page={"platinum"}
+            title={"Catálogo Collarín"}
+            content={
+              "Explora el catálogo de productos diesel de Platinum Driveline. Nuestra selección incluye componentes robustos y fiables, ideales para vehículos diesel."
+            }
+            type={"download"}
+            href={"/download/CATALOGO_COLLARÍN_24-25.pdf"}
+          />
         </section>
       </section>
 

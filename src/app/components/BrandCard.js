@@ -29,8 +29,8 @@ const BrandCard = ({ image, text, brand, link, text_button }) => {
   };
 
   return (
-    <article className="border border-slate-300 rounded-lg shadow flex flex-col flex-grow 2xl:mb-20">
-      <div className="w-full bg-white">
+    <article className="border border-slate-300 shadow rounded-lg flex flex-col flex-grow 2xl:mb-20">
+      <div className="w-full bg-white rounded-t-lg">
         <Image
           width={400}
           height={400}
@@ -39,7 +39,7 @@ const BrandCard = ({ image, text, brand, link, text_button }) => {
           src={image}
         />
       </div>
-      <section className="px-10 py-6 border-t-2 bg-slate-200 flex flex-col flex-grow">
+      <section className="rounded-b-lg px-10 py-6 border-t-2 bg-slate-200 flex flex-col flex-grow">
         <p className="text-black text-4xl my-4 flex-grow">{text}</p>
         <p className={`font-bold text-${getColor()}`}>{brand}</p>
         <Link href={`/${link}`}>
